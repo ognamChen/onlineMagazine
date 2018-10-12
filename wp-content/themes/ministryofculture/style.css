@@ -1,0 +1,405 @@
+/*
+Theme Name: ministryofculture
+Theme URI: 
+Author: 
+Author URI: 
+Description: Twenty Seventeen brings your site to life with immersive featured images and subtle animations. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  background-color: #FAFAFA !important;
+}
+
+body p {
+  font-size: 16px;
+  font-weight: 400;
+  /* letter-spacing: 2px; */
+  color: #1b1e21;
+}
+
+body h1 {
+  color: #1b1e21;
+}
+
+footer {
+  margin: 20px 0 !important;
+}
+
+footer a {
+  color: #bdbdbd;
+}
+
+footer a:hover {
+  color: #de270f;
+}
+
+.header_image img {
+  margin: 0 auto;
+  width: 300px;
+  filter: brightness(80%);
+  float: right;
+}
+
+.og-color-b1 {
+  background-color: #f8f9fa !important;
+}
+
+.og-color-b2 {
+  background-color: #f8f9fa21 !important;
+}
+
+.og-border-1 {
+  border: 1px solid #dee2e6 !important;
+  margin: 0px;
+  padding: 0px !important;
+}
+
+.og-under-orange-1 {
+  height: 10px;
+  width: 50px;
+  background-color: orange;
+  margin-top: -28px;
+  margin-left: 20px;
+}
+
+.og-under-green-1 {
+  height: 10px;
+  width: 50px;
+  background-color: #1f9887;
+  margin-top: -28px;
+  margin-left: 20px;
+}
+
+.og-under-orange-2 {
+  height: 10px;
+  width: 60px;
+  background-color: orange;
+  margin-top: -12px;
+  margin-left: 32px;
+}
+
+.og-under-green-2 {
+  height: 10px;
+  width: 60px;
+  background-color: #1f9887;
+  margin-top: -12px;
+  margin-left: 32px;
+}
+
+.og-box {
+  overflow: hidden;
+  padding: 10px;
+}
+
+.og-box a:hover {
+  text-decoration: none;
+}
+
+.og-box img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.og-box:hover img {
+  transform: scale(1.1);
+}
+
+.og-box:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.459);
+  /* transform: scale(1.05); */
+  position: relative;
+  z-index: 990;
+}
+
+.og-breadth {
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.og-box:hover .og-breadth {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.og-box .title {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 23px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.og-box .meta {
+  margin-bottom: 0px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.og-body .readmore {
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+}
+
+.og-box:hover .readmore {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .og-body .readmore {
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+  }
+}
+
+.og-box:hover .title {
+  color: #1b1e21;
+  font-size: 30px;
+}
+
+.og-box:hover .meta {
+  color: #1b1e21;
+}
+
+.og-post {
+  padding: 10px;
+}
+
+.og-post .meta {
+  padding: 30px;
+}
+
+.og-category p {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-bottom: 16px;
+}
+
+.og-category p:hover {
+  font-size: 28px;
+}
+
+.og-category h1 {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.og-category .tag {
+  font-size: 22px !important;
+
+}
+
+.og-carousel {
+  height: 420px;
+  border: 1px solid #dee2e6;
+}
+
+.og-carousel .og-body h1 {
+  font-size: 5.5rem;
+  color: #1b1e21bd;
+}
+
+/* .og-carousel .og-body .title {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 23px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.og-carousel .og-body .meta {
+  margin-bottom: 0px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+} */
+
+.og-carousel .carousel-inner {
+  cursor: pointer;
+  max-height: 370px;
+  overflow: hidden;
+}
+
+.og-carousel .carousel-inner .og-body {
+  position: absolute;
+  right: 0;
+  bottom: 190px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  display: block;
+}
+
+.og-carousel .carousel-inner:hover .og-body {
+  display: none;
+}
+
+.og-carousel .carousel-item p {
+  text-align: center;
+}
+
+.og-carousel .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.og-carousel .carousel-item:hover img {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.og-carousel .carousel-indicators {
+  bottom: 0px !important;
+  cursor: pointer;
+}
+
+.og-carousel .carousel-indicators li {
+  border-radius: 10px;
+  margin: 0px 6px;
+  height: 10px;
+  max-width: 10px;
+  /* border: 1px solid #cc1800; */
+  border: 1px solid #495057;
+  background-color: transparent;
+}
+
+.og-carousel .carousel-indicators .active {
+  /* background-color: #cc1800; */
+  background-color: #495057;
+  max-width: 12px;
+  margin: 0px 6px;
+  height: 12px;
+}
+
+.og-form-control {
+  border-radius: 0px !important;
+}
+
+.og-form-control:focus {
+  border-color: #1b1e21 !important;
+  box-shadow: none !important;
+}
+
+.clearfix {
+  clear: both !important;
+}
+
+.tagcloud a {
+  color: #1b1e21 !important;
+}
+
+.tagcloud a:hover {
+  color: #1f9887 !important;
+}
+
+.wpp-list a,
+.wpp-list a p {
+  color: #1b1e21;
+  font-size: 20px;
+}
+
+.wpp-list a:hover,
+.wpp-list a:hover p {
+  color: #1f9887;
+  transition: 0.5s;
+  /* font-size: 1.2rem; */
+}
+
+
+.navigation li a,
+.navigation li.active a,
+.navigation li.disabled {
+  color: #1b1e21;
+  text-decoration: none;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a,
+.navigation li.active a,
+.navigation li.disabled {
+  display: inline-block;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+  padding-top: 5px;
+}
+
+.navigation li a:hover {
+  color: #1b1e21;
+  background-color: transparent;
+  border: 1px solid #bdbdbd;
+}
+
+
+.navigation li.active a {
+  color: #FAFAFA;
+  background-color: #1b1e21;
+}
+
+.navigation li.pagLink1 a {
+  display: inline;
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.navigation li.pagLink2 a {
+  display: inline;
+  color: #1b1e21;
+  text-decoration: none;
+}
+
+.navigation li.pagLink1 .active a,
+.navigation li.pagLink1 a:hover {
+  color: #1b1e21;
+  text-decoration: none;
+  background-color: transparent;
+  border: none !important;
+}
+
+.navigation li.pagLink2 .active a,
+.navigation li.pagLink2 a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+  background-color: transparent;
+  border: none !important;
+}
+
+.og-comments {
+  padding: 10px;
+}
