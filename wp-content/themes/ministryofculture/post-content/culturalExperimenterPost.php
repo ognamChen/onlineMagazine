@@ -19,12 +19,12 @@
 
     ?>
     <div class="og-box og-color-b1">
-        <a href="<?php echo $category_url ?>">
-            <div class="og-category">
+        <div class="og-category">
+            <a href="<?php echo $category_url ?>">
                 <p class=""><?php echo $category_name; ?><div class="og-under-orange-1"></div>
                 </p>
-            </div>
-        </a>
+            </a>
+        </div>
         <a href="<?php echo $permalink ?>">
             <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
             <div class="og-body">

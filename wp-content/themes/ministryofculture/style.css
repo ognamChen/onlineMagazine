@@ -57,14 +57,14 @@ footer a:hover {
 
 .og-border-1 {
   border: 1px solid #dee2e6 !important;
-  margin: 0px;
+  /* margin: 0px; */
   padding: 0px !important;
 }
 
 .og-under-orange-1 {
   height: 10px;
   width: 50px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: -28px;
   margin-left: 20px;
 }
@@ -72,7 +72,7 @@ footer a:hover {
 .og-under-green-1 {
   height: 10px;
   width: 50px;
-  background-color: #1f9887;
+  /* background-color: #1f9887; */
   margin-top: -28px;
   margin-left: 20px;
 }
@@ -80,7 +80,7 @@ footer a:hover {
 .og-under-orange-2 {
   height: 10px;
   width: 60px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: -12px;
   margin-left: 32px;
 }
@@ -88,7 +88,7 @@ footer a:hover {
 .og-under-green-2 {
   height: 10px;
   width: 60px;
-  background-color: #1f9887;
+  /* background-color: #1f9887; */
   margin-top: -12px;
   margin-left: 32px;
 }
@@ -112,12 +112,12 @@ footer a:hover {
 }
 
 .og-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .og-box:hover {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.459);
-  /* transform: scale(1.05); */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.459);
+  transform: scale(1.05);
   position: relative;
   z-index: 990;
 }
@@ -129,7 +129,7 @@ footer a:hover {
 
 .og-box:hover .og-breadth {
   transition: 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .og-box .title {
@@ -170,7 +170,7 @@ footer a:hover {
 
 .og-box:hover .title {
   color: #1b1e21;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
 .og-box:hover .meta {
@@ -178,6 +178,10 @@ footer a:hover {
 }
 
 .og-post {
+  padding: 10px;
+}
+
+.og-post h1 {
   padding: 10px;
 }
 
@@ -197,7 +201,7 @@ footer a:hover {
 }
 
 .og-category p:hover {
-  font-size: 28px;
+  /* font-size: 28px; */
 }
 
 .og-category h1 {
@@ -275,7 +279,7 @@ footer a:hover {
 
 .og-carousel .carousel-item:hover img {
   transition: 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .og-carousel .carousel-indicators {
@@ -306,7 +310,7 @@ footer a:hover {
 }
 
 .og-form-control:focus {
-  border-color: #1b1e21 !important;
+  border-color: #dee2e6 !important;
   box-shadow: none !important;
 }
 
@@ -331,7 +335,7 @@ footer a:hover {
 .wpp-list a:hover,
 .wpp-list a:hover p {
   color: #1f9887;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   /* font-size: 1.2rem; */
 }
 

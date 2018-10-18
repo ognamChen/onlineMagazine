@@ -67,12 +67,12 @@
 						<div class="col">
 							<ul id="footer-bottom-menu" class="menu">
 								<?php
-									$menu_locations = get_nav_menu_locations();
-									$menu_items = wp_get_nav_menu_items($menu_locations['footerNav']);
-									foreach ($menu_items as $menu_item) {
-										$permalink = $menu_item->url;
-										$title = $menu_item->title;
-								?>
+								$menu_locations = get_nav_menu_locations();
+								$menu_items = wp_get_nav_menu_items($menu_locations['footerNav']);
+								foreach ($menu_items as $menu_item) {
+									$permalink = $menu_item->url;
+									$title = $menu_item->title;
+									?>
 								<li class="menu-item menu-item-type-post_type menu-item-object-page">
 									<a href="<?php echo $permalink ?>">
 										<?php echo $title ?>
@@ -88,7 +88,7 @@
 							<p class="footer__logo-title">指導單位</p>
 							<div class="row">
 								<div class="col-md-3 col-6 offset-3 offset-md-0">
-									<a class="footer__advisor-wrapper" href="https://www.moc.gov.tw/" target="_blank" rel="nofollow"> <img width="1024" height="253" 
+									<a class="footer__advisor-wrapper" href="https://www.moc.gov.tw/" target="_blank" rel="nofollow"> <img width="1024" height="253"
 									src="https://clab.org.tw/wp-content/uploads/2018/07/advisor-logo-1024x253.png" class="attachment-large size-large" alt="">
 									</a>
 								</div>
@@ -114,6 +114,12 @@
 	$(document).ready(function () {
 		$(".carousel-inner .carousel-item:first").addClass("active");
 		// $("#mainNav").load('https://clab.org.tw');
+
+		$(".og-category a").hover(function() {
+			$(".og-under-orange-1", this).css("background-color", "orange");
+		}, function() {
+			$(".og-under-orange-1", this).css("background-color", "white");
+		});
 	});
 </script>
 </body>

@@ -15,15 +15,17 @@
             <div class="col-md-12">
                 <div class="">
                     <div class="og-post">
+                        <div class="title og-border-1 m-b-30">
+                            <h1><strong><?php the_title();?></strong></h1>
+                            <div class="m-l-30 p-l-30 m-r-30 p-r-30">
+                                <?php the_excerpt();?>
+                            </div>
+                        </div>
                         <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
                         <p style="color:red;"><?php echo get_the_post_thumbnail_caption() ?></p>
                     </div>
                 </div>
                 <div class="og-post">
-                    <div class="title">
-                        <div class="m-t-30"></div>
-                        <h1><strong><?php the_title();?></strong></h1>
-                    </div>
                     <div class="meta">
                         <p><?php the_content();?></p>
                     </div>

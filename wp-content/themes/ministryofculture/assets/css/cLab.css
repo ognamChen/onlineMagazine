@@ -5645,7 +5645,7 @@ p {
     max-width: 100%
 }
 
-input[type=search],
+/* input[type=search],
 input[type=text] {
     border: 0;
     padding: 7.5px 15px;
@@ -5662,7 +5662,7 @@ input[type=text]:focus {
 
 input[type=search] {
     font-size: 20px
-}
+} */
 
 .gform_wrapper {
     font-weight: 700;
@@ -6075,7 +6075,7 @@ input[type=search] {
 .menu>li>a:before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: 30px;
     right: 30px;
     height: 2px;
