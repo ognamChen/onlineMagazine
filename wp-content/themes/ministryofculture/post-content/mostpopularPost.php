@@ -2,7 +2,7 @@
 $args = array(
     'range' => 'last30days',
     'stats_comments' => 1,
-    'limit'     => 8,
+    'limit'     => 7,
 );
 ?>
 <section id="editorChoiceTag">

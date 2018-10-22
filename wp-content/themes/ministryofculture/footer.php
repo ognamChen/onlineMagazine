@@ -120,6 +120,32 @@
 		}, function() {
 			$(".og-under-orange-1", this).css("background-color", "white");
 		});
+		// $("img").addClass("img-fluid");
+		fixAutofunc();
+
+		$(window).resize(function () {
+			var width = $(window).width();
+			setTimeout(function(){
+				fixAutofunc();
+			}, 500);
+		});
+
+		function fixAutofunc() {
+			var width = $(window).width();
+			if (width <=767) {
+					$(".fix-height").each(function () {
+						$(this).addClass("hauto");
+					});
+					$(".og-border-1").addClass("un-border");
+					$("section").addClass("m-t-10")
+				} else {
+					$(".fix-height").each(function () {
+						$(this).removeClass("hauto");
+					});
+					$(".og-border-1").removeClass("un-border");
+					$("section").removeClass("m-t-10")
+				}
+			}
 	});
 </script>
 </body>

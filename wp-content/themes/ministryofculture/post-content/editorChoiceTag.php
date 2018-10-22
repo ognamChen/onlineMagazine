@@ -1,5 +1,5 @@
 <section id="editorChoiceTag">
-    <div class="og-box og-color-b1" style="height:380px;">
+    <div class="og-box og-color-b1">
         <div class="og-category">
             <p class="tag">編輯推薦<div class="og-under-green-1"></div></p>
         </div>
@@ -23,9 +23,6 @@
                 <a class="wpp-post-title" href="<?php echo $permalink ?>">
                     <p class="m-b-0"><?php echo $product->post_title ?></p>
                 </a>
-                <span class="wpp-meta post-stats">
-                    <span class="wpp-views"><?php echo $excerpt ?></span>
-                </span>
             </li>
             <?php }?>
         </ul>

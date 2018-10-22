@@ -2,7 +2,7 @@
     <?php
     $category_slug = 'international-observation';
     $args = array(
-    'numberposts' => 7,
+    'numberposts' => 1,
     'category_name' => $category_slug,
     'orderby' => 'date',
     );
@@ -15,7 +15,7 @@
         $category_url = get_category_link($category_id);
         $postMeta = get_post_meta($product->ID, 'description', true);
         $category_name = get_category_by_slug( $category_slug)->name;
-        $excerpt = wp_trim_words( get_the_excerpt($product), 50, '...');
+        $excerpt = wp_trim_words( get_the_excerpt($product), 20, '...');
 
     ?>
     <div class="og-box og-color-b1">

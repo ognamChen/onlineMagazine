@@ -15,14 +15,13 @@ Template Name: Page
 			<div class="col-md-8 p-r-0 p-l-0">
 				<?php get_template_part('post-content/currentPost');?>
 			</div>
-			<div class="col-md-4 og-border-1 m-l--1" style="height:420px;">
-				<div class="m-t-30 visible-sm"></div>
-				<?php echo get_search_form(); ?>
-				<?php get_template_part('post-content/uncategorizedPost');?>
+			<div class="col-md-4 p-r-0 p-l-0 m-l--1 fix-height h420">
+				<div class="og-border-1 fix-height h70"><?php echo get_search_form(); ?></div>
+				<div class="og-border-1 fix-height h350"><?php get_template_part('post-content/uncategorizedPost');?></div>
 			</div>
 		</div>
-		<div class="row m-t--1">
-			<div class="col-md-4 og-border-1">
+		<div class="row m-t--1 fix-height h450">
+			<div class="col-md-4 og-border-1" >
 				<?php get_template_part('post-content/culturalTag');?>
 			</div>
 			<div class="col-md-8 og-border-1 m-l--1">
@@ -32,12 +31,12 @@ Template Name: Page
 		<div class="row">
 			<div class="col-md-8">
 				<div class="row">
-					<div class="col-md-12 og-border-1 m-t--1" style="height:450px;">
+					<div class="col-md-12 og-border-1 m-t--1 fix-height h450">
 						<?php get_template_part('post-content/culturalResearchPost');?>
 					</div>
 				</div>
 				<div class="row m-t--1">
-					<div class="col-md-6 og-border-1" >
+					<div class="col-md-6 og-border-1 fix-height h380">
 						<?php get_template_part('post-content/editorChoiceTag');?>
 					</div>
 					<div class="col-md-6 og-border-1">
@@ -45,20 +44,20 @@ Template Name: Page
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 og-border-1 m-t--1" style="height:460px;">
+					<div class="col-md-12 og-border-1 m-t--1 fix-height h460" >
 						<?php get_template_part('post-content/culturalResearchPost');?>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="row">
-					<div class="col-md-12 og-border-1 m-t--1 m-l--1" style="height:380px;">
+					<div class="col-md-12 og-border-1 m-t--1 m-l--1 fix-height h380">
 						<?php get_template_part('post-content/internationalObservationPost');?>
 					</div>
-					<div class="col-md-12 og-border-1 m-t--1 m-l--1">
+					<div class="col-md-12 og-border-1 m-t--1 m-l--1 fix-height h520">
 						<?php get_template_part('post-content/mostpopularPost');?>
 					</div>
-					<div class="col-md-12 og-border-1 m-t--1 m-l--1" style="height:390px;">
+					<div class="col-md-12 og-border-1 m-t--1 m-l--1 fix-height h390">
 						<?php get_template_part('post-content/echoPost');?>
 					</div>
 				</div>

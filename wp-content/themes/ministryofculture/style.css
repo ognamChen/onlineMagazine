@@ -15,17 +15,43 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   background-color: #FAFAFA !important;
+  word-break: break-all !important;
 }
 
-body p {
+p {
   font-size: 16px;
   font-weight: 400;
   /* letter-spacing: 2px; */
   color: #1b1e21;
 }
 
-body h1 {
-  color: #1b1e21;
+img,
+video {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+.wp-caption,
+.gallery-caption {
+	color: #666;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-style: italic;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px;
+  color: #1b1e21 !important;
 }
 
 footer {
@@ -56,8 +82,7 @@ footer a:hover {
 }
 
 .og-border-1 {
-  border: 1px solid #dee2e6 !important;
-  /* margin: 0px; */
+  border: 1px solid #dee2e6;
   padding: 0px !important;
 }
 
@@ -115,12 +140,12 @@ footer a:hover {
   transform: scale(1.05);
 }
 
-.og-box:hover {
+/* .og-box:hover {
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.459);
   transform: scale(1.05);
   position: relative;
   z-index: 990;
-}
+} */
 
 .og-breadth {
   overflow: hidden;
@@ -181,7 +206,9 @@ footer a:hover {
   padding: 10px;
 }
 
-.og-post h1 {
+.og-post h1,
+.og-post h2,
+.og-post h3 {
   padding: 10px;
 }
 
@@ -204,7 +231,9 @@ footer a:hover {
   /* font-size: 28px; */
 }
 
-.og-category h1 {
+.og-category h1,
+.og-category h2,
+.og-category h3 {
   padding: 10px;
   margin-bottom: 0;
 }
@@ -219,10 +248,10 @@ footer a:hover {
   border: 1px solid #dee2e6;
 }
 
-.og-carousel .og-body h1 {
+/* .og-carousel .og-body h1 {
   font-size: 5.5rem;
   color: #1b1e21bd;
-}
+} */
 
 /* .og-carousel .og-body .title {
   margin-bottom: 0px;
@@ -251,16 +280,16 @@ footer a:hover {
 .og-carousel .carousel-inner .og-body {
   position: absolute;
   right: 0;
-  bottom: 190px;
+  bottom: 127px;
   left: 0;
   z-index: 15;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
+  padding-left: 10px;
+  /* margin-right: 15%;
+  margin-left: 15%; */
   display: block;
 }
 
@@ -326,19 +355,25 @@ footer a:hover {
   color: #1f9887 !important;
 }
 
+.wpp-list li {
+  margin-bottom: 10px;
+}
+
 .wpp-list a,
 .wpp-list a p {
   color: #1b1e21;
   font-size: 20px;
 }
 
+.wpp-meta,
+.post-stats {
+  color: darkgrey !important;
+}
+
 .wpp-list a:hover,
 .wpp-list a:hover p {
   color: #1f9887;
-  /* transition: 0.5s; */
-  /* font-size: 1.2rem; */
 }
-
 
 .navigation li a,
 .navigation li.active a,
@@ -406,4 +441,40 @@ footer a:hover {
 
 .og-comments {
   padding: 10px;
+}
+
+.fix-height.h70 {
+  height: 70px;
+}
+
+.fix-height.h350 {
+  height: 350px;
+}
+
+.fix-height.h380 {
+  height: 380px;
+}
+
+.fix-height.h390 {
+  height: 390px;
+}
+
+.fix-height.h420 {
+  height: 420px;
+}
+
+.fix-height.h450 {
+  height: 450px;
+}
+
+.fix-height.h460 {
+  height: 460px;
+}
+
+.fix-height.h520 {
+  height: 520px;
+}
+
+.fix-height.hauto {
+  height: auto !important;
 }
