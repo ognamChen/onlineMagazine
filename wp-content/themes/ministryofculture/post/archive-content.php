@@ -13,7 +13,7 @@ $excerpt = wp_trim_words( get_the_content(), 120, '...');
                     <a class="" href="<?php the_permalink(); ?>">
                         <p class="title"><strong><?php the_title(); ?></strong></p>
                         <!-- <p class="meta"><?php echo get_post_meta($id, 'description', true); ?></p> -->
-                        <p class="content"><?php echo $excerpt; ?></p>
+                        <p class="meta"><?php echo $excerpt; ?></p>
                         <p class="readmore">閱讀更多</p>
                     </a>
                 </div>

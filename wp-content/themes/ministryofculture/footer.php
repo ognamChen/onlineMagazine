@@ -112,6 +112,9 @@
 <script>
 	var length;
 	$(document).ready(function () {
+
+		$("body img").css("opacity", "1");
+
 		$(".carousel-inner .carousel-item:first").addClass("active");
 		// $("#mainNav").load('https://clab.org.tw');
 

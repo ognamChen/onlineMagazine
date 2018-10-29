@@ -30,7 +30,7 @@
                 <div class="carousel-item">
                     <a href="<?php echo $permalink ?>">
                         <img class="img-fluid p-10" src="<?php echo $image ?>">
-                        <div class="og-body og-color-b2">
+                        <div class="og-body">
                             <h2 class=""><?php echo $product->post_title ?></h2>
                             <!-- <p class="meta p-b-10"><?php echo $excerpt; ?></p> -->
                         </div>

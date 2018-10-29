@@ -18,6 +18,14 @@ body {
   word-break: break-all !important;
 }
 
+body img {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 p {
   font-size: 16px;
   font-weight: 400;
@@ -27,24 +35,26 @@ p {
 
 img,
 video {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
 }
 
 .wp-caption,
 .gallery-caption {
-	color: #666;
-	font-size: 13px;
-	font-size: 0.8125rem;
-	font-style: italic;
-	margin-bottom: 1.5em;
-	max-width: 100%;
+  color: #666;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  max-width: 100%;
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -92,6 +102,10 @@ footer a:hover {
   /* background-color: orange; */
   margin-top: -28px;
   margin-left: 20px;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .og-under-green-1 {
@@ -100,6 +114,10 @@ footer a:hover {
   /* background-color: #1f9887; */
   margin-top: -28px;
   margin-left: 20px;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .og-under-orange-2 {
@@ -108,6 +126,10 @@ footer a:hover {
   /* background-color: orange; */
   margin-top: -12px;
   margin-left: 32px;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .og-under-green-2 {
@@ -116,6 +138,10 @@ footer a:hover {
   /* background-color: #1f9887; */
   margin-top: -12px;
   margin-left: 32px;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
 }
 
 .og-box {
@@ -136,7 +162,7 @@ footer a:hover {
   -o-transition: 0.5s;
 }
 
-.og-box:hover img {
+.og-box img:hover {
   transform: scale(1.05);
 }
 
@@ -152,7 +178,7 @@ footer a:hover {
   max-height: 300px;
 }
 
-.og-box:hover .og-breadth {
+.og-box .og-breadth:hover {
   transition: 0.5s;
   transform: scale(1.05);
 }
@@ -173,6 +199,7 @@ footer a:hover {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
+  color: #495057;
 }
 
 .og-body .readmore {
@@ -182,7 +209,7 @@ footer a:hover {
 }
 
 .og-box:hover .readmore {
-  display: none;
+  /* display: none; */
 }
 
 @media (max-width: 767px) {
@@ -193,12 +220,12 @@ footer a:hover {
   }
 }
 
-.og-box:hover .title {
+.og-box .title:hover {
   color: #1b1e21;
-  /* font-size: 30px; */
+  font-size: 26px;
 }
 
-.og-box:hover .meta {
+.og-box .meta:hover {
   color: #1b1e21;
 }
 
@@ -221,10 +248,11 @@ footer a:hover {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 0px;
-  padding-bottom: 16px;
+  padding-bottom: 5px;
+  color: #343a40;
 }
 
 .og-category p:hover {
@@ -240,7 +268,7 @@ footer a:hover {
 
 .og-category .tag {
   font-size: 22px !important;
-
+  color: inherit;
 }
 
 .og-carousel {
@@ -299,6 +327,10 @@ footer a:hover {
 
 .og-carousel .carousel-item p {
   text-align: center;
+}
+
+.og-carousel h2 {
+  color: white !important;
 }
 
 .og-carousel .carousel-item img {

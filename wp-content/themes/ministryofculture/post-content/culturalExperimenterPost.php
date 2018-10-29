@@ -19,6 +19,10 @@
 
     ?>
     <div class="og-box og-color-b1">
+        
+        <a href="<?php echo $permalink ?>">
+            <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
+        </a>
         <div class="og-category">
             <a href="<?php echo $category_url ?>">
                 <p class=""><?php echo $category_name; ?><div class="og-under-orange-1"></div>
@@ -26,7 +30,6 @@
             </a>
         </div>
         <a href="<?php echo $permalink ?>">
-            <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
             <div class="og-body">
                 <p class="title"><strong><?php echo $product->post_title ?></strong></p>
                 <p class="meta"><?php echo $excerpt; ?></p>
