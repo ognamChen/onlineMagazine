@@ -373,16 +373,23 @@ footer a:hover {
   height: 10px;
   max-width: 10px;
   /* border: 1px solid #cc1800; */
-  border: 1px solid #495057;
-  background-color: transparent;
+  background-color: darkgrey;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.og-carousel .carousel-indicators li:hover {
+  background-color: #de270f;
 }
 
 .og-carousel .carousel-indicators .active {
   /* background-color: #cc1800; */
   background-color: #495057;
-  max-width: 12px;
+  max-width: 10px;
   margin: 0px 6px;
-  height: 12px;
+  height: 10px;
 }
 
 .og-form-control {
