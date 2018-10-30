@@ -12,20 +12,23 @@
     <div class="m-t-30"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="">
-                    <div class="og-post">
-                        <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
-                        <p style="color:red;"><?php echo get_the_post_thumbnail_caption() ?></p>
-                        <div class="title og-border-1 m-b-30">
-                            <h1><strong><?php the_title();?></strong></h1>
-                            <div class="m-l-30 p-l-30 m-r-30 p-r-30">
-                                <?php the_excerpt();?>
-                            </div>
+            <div class="col-md-12 og-border-1">
+                <div class="og-post">
+                    <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
+                    <p style="color:red;"><?php echo get_the_post_thumbnail_caption() ?></p>
+                    <div class="title m-b-30">
+                        <h1><strong><?php the_title();?></strong></h1>
+                        <div class="info">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><p>分類：<?php the_category(' ');?> |</p></li>
+                                <li class="list-inline-item"><p><?php the_tags(null, ', ', null);?> |</p></li>
+                                <li class="list-inline-item"><p>發佈時間：<span style="color:#1b1e21"><?php the_time();?></span></p></li>
+                            </ul>
+                        </div>
+                        <div class="m-l-30 p-l-30 m-r-30 p-r-30">
+                            <?php the_excerpt();?>
                         </div>
                     </div>
-                </div>
-                <div class="og-post">
                     <div class="meta">
                         <p><?php the_content();?></p>
                     </div>

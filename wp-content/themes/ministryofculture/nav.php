@@ -1,4 +1,4 @@
-<div class="header-spacer" style="height: 125px;"></div>
+<div class="header-spacer" style="height: 150px;"></div>
 <header class="header header--stuck">
 	<div class="container-fluid">
 		<div class="row align-items-center">
@@ -25,13 +25,13 @@
 			</div>
 			<div class="col-6 col-md-2 text-right d-none d-sm-block">
 				<ul class="language-menu">
-					<!-- <li class="active"><a href="https://clab.org.tw">繁中</a></li> -->
-					<!-- <li class=" "><a href="https://clab.org.tw/en/">EN</a></li> -->
+					<li class="active"><a href="https://clab.org.tw">繁中</a></li>
+					<li class=" "><a href="https://clab.org.tw/en/">EN</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- <div class="header__mobile-menu-wrapper d-sm-none">
+	<div class="header__mobile-menu-wrapper d-sm-none">
 		<ul id="menu-%e6%89%8b%e6%a9%9f%e9%81%b8%e5%96%ae" class="header__mobile-menu">
 			<li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="https://clab.org.tw/about/">關於</a></li>
 			<li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-659"><a href="https://clab.org.tw/latest-news/">最新消息</a></li>
@@ -41,5 +41,5 @@
 		</ul>
 		<ul class="language-menu">
 		</ul>
-	</div> -->
+	</div>
 </header>

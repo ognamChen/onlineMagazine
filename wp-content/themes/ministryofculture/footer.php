@@ -1,4 +1,5 @@
 <?php wp_footer();?>
+<div class="m-t-30"></div>
 <footer class="footer">
 	<div class="footer__top og-border-1">
 		<div class="container">
@@ -150,6 +151,27 @@
 				}
 			}
 	});
+
+
+	// var content = $('main'),
+	// 	header = $('header');
+				
+	// $(content).clone().prependTo(header).addClass('blurred');
+
+	// var blur = 'blur(.5em)';
+	// $('.blurred').css({
+	// 'background': '#fff',
+	// '-webkit-filter': blur,
+	// 'filter': blur
+	// });
+
+	// $(document).scroll(function(){
+	// var scroll = $(this).scrollTop();
+	// $('.blurred').css({
+	// 	'-webkit-transform' : 'translateY(-'+scroll+'px)',
+	// 	'transform' : 'translateY(-'+scroll+'px)'
+	// });
+	// })
 </script>
 </body>
 

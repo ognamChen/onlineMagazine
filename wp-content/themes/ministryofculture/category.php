@@ -49,13 +49,13 @@
         <div class="offset-md-2 col-md-8 col-sm-12 m-t-30 text-center">
             <?php wpbeginner_numeric_posts_nav(); ?>
         </div>
-        <div class="col-md-4" style="height:380px;">
+        <div class="col-md-4 fix-height h380">
             <?php get_template_part('post-content/culturalTag');?>
         </div>
-        <div class="col-md-4" style="height:380px;">
+        <div class="col-md-4 fix-height h380">
             <?php get_template_part('post-content/editorChoiceTag');?>
         </div>
-        <div class="col-md-4" style="height:380px;">
+        <div class="col-md-4 fix-height h380">
             <?php get_template_part('post-content/mostpopularPost2');?>
         </div>
     </div>
