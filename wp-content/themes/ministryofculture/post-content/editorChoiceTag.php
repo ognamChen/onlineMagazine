@@ -17,7 +17,7 @@
                 $permalink = get_permalink($product);
                 $time = get_post_time('Y-m-d', true, $product, false);
                 $postMeta = get_post_meta($product->ID, 'description', true);
-                $excerpt = wp_trim_words( get_the_excerpt($product), 20, '...');
+                $excerpt = wp_trim_words( get_the_excerpt($product), 40, '...');
             ?>
             <li>
                 <a class="wpp-post-title" href="<?php echo $permalink ?>">

@@ -20,9 +20,9 @@
                         <h1><strong><?php the_title();?></strong></h1>
                         <div class="info">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><p>分類：<?php the_category(' ');?> |</p></li>
+                                <li class="list-inline-item"><p>分類：<?php the_category(' ');?></p></li>
                                 <?php if (has_tag()) { ?>
-                                    <li class="list-inline-item"><p><?php the_tags(null, ', ', null);?> |</p></li>
+                                    <li class="list-inline-item"><p><?php the_tags(null, ', ', null);?></p></li>
                                 <?php } ?>
                                 <li class="list-inline-item"><p>發佈時間：<span style="color:#1b1e21"><?php the_time('Y/m/j a g:i');?></span></p></li>
                             </ul>

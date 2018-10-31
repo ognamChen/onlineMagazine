@@ -16,7 +16,7 @@ Template Name: Page
 				<?php get_template_part('post-content/currentPost');?>
 			</div>
 			<div class="col-md-4 p-r-0 p-l-0 m-l--1 fix-height h420">
-				<div class="og-border-1 fix-height h70"><?php echo get_search_form(); ?></div>
+				<div class="jq_home_search og-border-1 fix-height h70"><?php echo get_search_form(); ?></div>
 				<div class="og-border-1 fix-height h350"><?php get_template_part('post-content/uncategorizedPost');?></div>
 			</div>
 		</div>
@@ -39,7 +39,7 @@ Template Name: Page
 					<div class="col-md-6 og-border-1 fix-height h380">
 						<?php get_template_part('post-content/editorChoiceTag');?>
 					</div>
-					<div class="col-md-6 og-border-1">
+					<div class="col-md-6 og-border-1 fix-height h380">
 						<?php get_template_part('post-content/baseHistoryPost');?>
 					</div>
 				</div>

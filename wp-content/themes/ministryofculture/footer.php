@@ -140,14 +140,12 @@
 					$(".fix-height").each(function () {
 						$(this).addClass("hauto");
 					});
-					$(".og-border-1").addClass("un-border");
-					$("section").addClass("m-t-10")
+					$(".jq_home_search").hide();
 				} else {
 					$(".fix-height").each(function () {
 						$(this).removeClass("hauto");
 					});
-					$(".og-border-1").removeClass("un-border");
-					$("section").removeClass("m-t-10")
+					$(".jq_home_search").show();
 				}
 			}
 	});

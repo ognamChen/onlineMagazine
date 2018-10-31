@@ -1,4 +1,4 @@
-<div class="header-spacer" style="height: 150px;"></div>
+<div class="header-spacer"></div>
 <header class="header header--stuck">
 	<div class="container-fluid">
 		<div class="row align-items-center">

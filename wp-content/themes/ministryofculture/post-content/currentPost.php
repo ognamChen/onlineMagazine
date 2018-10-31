@@ -1,5 +1,5 @@
 <section id="currentPost">
-    <div id="carouselExampleIndicators" class="carousel slide og-carousel" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide og-carousel fix-height h420" data-ride="carousel">
         <div class="d-none d-sm-block">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,7 +15,7 @@
         <div class="carousel-inner">
         <?php
             $args = array(
-                'numberposts' => 7,
+                'numberposts' => 1,
                 'orderby' => 'date',
             );
             $products = get_posts($args);
@@ -24,7 +24,7 @@
                 $permalink = get_permalink($product);
                 $time = get_post_time('Y-m-d', true, $product, false);
                 $postMeta = get_post_meta($product->ID, 'description', true);
-                $excerpt = wp_trim_words( get_the_excerpt($product), 20, '...');
+                $excerpt = wp_trim_words( get_the_excerpt($product), 40, '...');
 
                 ?>
                 <div class="carousel-item">
