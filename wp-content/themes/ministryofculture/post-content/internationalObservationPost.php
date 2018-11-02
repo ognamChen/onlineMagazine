@@ -15,7 +15,7 @@
         $category_url = get_category_link($category_id);
         $postMeta = get_post_meta($product->ID, 'description', true);
         $category_name = get_category_by_slug( $category_slug)->name;
-        $excerpt = wp_trim_words( get_the_excerpt($product), 40, '...');
+        $excerpt = wp_trim_words( get_the_excerpt($product), 45, '...');
     ?>
     <div class="og-box og-color-b1">
         
@@ -24,12 +24,12 @@
         </a>
         <div class="og-category">
             <a href="<?php echo $category_url ?>">
-                <p class=""><?php echo $category_name; ?><div class="og-under-orange-1"></div></p>
+                <p class=""><?php echo "分類：".$category_name; ?><div class="og-under-orange-1"></div></p>
             </a>
         </div>
         <a href="<?php echo $permalink ?>">
             <div class="og-body">
-                <p class="title"><strong><?php echo $product->post_title ?></strong></p>
+                <p class="title"><?php echo $product->post_title ?></p>
                 <p class="meta"><?php echo $excerpt ?></p>
             </div>
         </a>

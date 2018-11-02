@@ -26,12 +26,24 @@ body img {
   transition: 0.5s;
 }
 
+main {
+  padding-right:10px;
+  padding-left: 10px;
+}
+
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   /* letter-spacing: 2px; */
   color: #1b1e21;
 }
+
+@media (max-width:767px) {
+  p {
+    font-size: 13px;
+  }
+}
+
 
 img,
 video {
@@ -64,6 +76,12 @@ h3 {
   color: #1b1e21 !important;
 }
 
+@media (max-width:767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
 footer {
   margin: 20px 0 !important;
 }
@@ -83,7 +101,7 @@ footer a:hover {
   float: right;
 }
 
-.header-spacer {
+/* .header-spacer {
   height: 150px;
 }
 
@@ -91,7 +109,7 @@ footer a:hover {
   .header-spacer {
     height: 85px;
   }
-}
+} */
 
 .og-color-b1 {
   background-color: #f8f9fa !important;
@@ -111,7 +129,7 @@ footer a:hover {
   width: 50px;
   /* background-color: orange; */
   margin-top: -28px;
-  margin-left: 20px;
+  margin-left: 0px;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -123,7 +141,7 @@ footer a:hover {
   width: 50px;
   /* background-color: #1f9887; */
   margin-top: -28px;
-  margin-left: 20px;
+  margin-left: 0px;
   -webkit-transition: background-color 0.4s ease;
   -moz-transition: background-color 0.4s ease;
   -o-transition: background-color 0.4s ease;
@@ -197,10 +215,17 @@ footer a:hover {
   margin-bottom: 0px;
   padding-top: 10px;
   font-size: 23px;
+  font-weight: 500;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+@media (max-width:767px) {
+  .og-box .title {
+    font-size: 16px;
+  }
 }
 
 .og-box .meta {
@@ -227,6 +252,7 @@ footer a:hover {
     position: absolute;
     right: 15px;
     bottom: 0px;
+    display: none;
   }
 }
 
@@ -243,7 +269,10 @@ footer a:hover {
   padding: 10px;
 }
 
-.og-post h1,
+.og-post h1 {
+  padding: 10px;
+  font-size: 1.5rem;
+}
 .og-post h2,
 .og-post h3 {
   padding: 10px;
@@ -283,11 +312,21 @@ footer a:hover {
   color: #343a40;
 }
 
+@media (max-width:767px) {
+  .og-category p {
+    font-size: 14px;
+  }
+}
+
 .og-category p:hover {
   /* font-size: 28px; */
 }
 
-.og-category h1,
+.og-category h1 {
+  padding: 10px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
 .og-category h2,
 .og-category h3 {
   padding: 10px;
@@ -295,13 +334,18 @@ footer a:hover {
 }
 
 .og-category .tag {
-  font-size: 22px !important;
+  font-size: 16px;
   margin-bottom: 20px;
-  color: inherit;
+  color: #343a40;
+}
+
+@media (max-width:767px) {
+  .og-category .tag {
+    font-size: 14px;
+  }
 }
 
 .og-carousel {
-  /* height: 420px; */
   border: 1px solid #dee2e6;
 }
 
@@ -330,7 +374,7 @@ footer a:hover {
 
 .og-carousel .carousel-inner {
   cursor: pointer;
-  max-height: 370px;
+  max-height: 410px;
   overflow: hidden;
 }
 
@@ -352,7 +396,7 @@ footer a:hover {
 
 @media (max-width: 575px) {
   .og-carousel .carousel-inner .og-body {
-    bottom: 100px;
+    bottom: 20px;
   }
 }
 
@@ -366,6 +410,12 @@ footer a:hover {
 
 .og-carousel h2 {
   color: white !important;
+}
+
+@media (max-width:767px) {
+  .og-carousel h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .og-carousel .carousel-item img {
@@ -389,7 +439,7 @@ footer a:hover {
   height: 10px;
   max-width: 10px;
   /* border: 1px solid #cc1800; */
-  background-color: darkgrey;
+  background-color: #f8f9fa;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -440,11 +490,20 @@ footer a:hover {
 .wpp-list a,
 .wpp-list a p {
   color: #1b1e21;
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 500;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+@media (max-width:767px) {
+
+  .wpp-list a,
+  .wpp-list a p {
+    font-size: 16px;
+  }
 }
 
 .wpp-meta,

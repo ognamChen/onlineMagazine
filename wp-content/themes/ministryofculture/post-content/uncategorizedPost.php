@@ -15,13 +15,13 @@
         $category_id = get_category_by_slug( $category_slug )->term_id;
         $category_url = get_category_link($category_id);
         $postMeta = get_post_meta($product->ID, 'description', true);
-        $excerpt = wp_trim_words( get_the_excerpt($product), 20, '...');
+        $excerpt = wp_trim_words( get_the_excerpt($product), 45, '...');
     ?>
     <div class="og-box og-color-b1">
         <a href="<?php echo $category_url ?>">
             <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
             <div class="og-body">
-                <p class="title"><strong><?php echo $product->post_title ?></strong></p>
+                <p class="title"><?php echo $product->post_title ?></p>
                 <p class="meta"><?php echo $excerpt ?></p>
             </div>
         </a>

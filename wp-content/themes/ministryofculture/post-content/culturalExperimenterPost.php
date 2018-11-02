@@ -25,13 +25,13 @@
         </a>
         <div class="og-category">
             <a href="<?php echo $category_url ?>">
-                <p class=""><?php echo $category_name; ?><div class="og-under-orange-1"></div>
+                <p class=""><?php echo "分類：".$category_name; ?><div class="og-under-orange-1"></div>
                 </p>
             </a>
         </div>
         <a href="<?php echo $permalink ?>">
             <div class="og-body">
-                <p class="title"><strong><?php echo $product->post_title ?></strong></p>
+                <p class="title"><?php echo $product->post_title ?></p>
                 <p class="meta"><?php echo $excerpt; ?></p>
             </div>
         </a>

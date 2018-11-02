@@ -1,6 +1,6 @@
 <section id="currentPost">
     <div id="carouselExampleIndicators" class="carousel slide og-carousel fix-height h420" data-ride="carousel">
-        <div class="d-none d-sm-block">
+        <!-- <div class="d-none d-sm-block"> -->
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -10,12 +10,11 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
             </ol>
-        </div>
-
+        <!-- </div> -->
         <div class="carousel-inner">
         <?php
             $args = array(
-                'numberposts' => 1,
+                'numberposts' => 7,
                 'orderby' => 'date',
             );
             $products = get_posts($args);
