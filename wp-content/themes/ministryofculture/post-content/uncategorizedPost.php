@@ -17,7 +17,7 @@
         $postMeta = get_post_meta($product->ID, 'description', true);
         $excerpt = wp_trim_words( get_the_excerpt($product), 45, '...');
     ?>
-    <div class="og-box og-color-b1">
+    <div class="og-box og-background-1">
         <a href="<?php echo $category_url ?>">
             <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
             <div class="og-body">

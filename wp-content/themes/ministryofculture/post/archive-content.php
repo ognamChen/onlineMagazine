@@ -6,7 +6,7 @@ $excerpt = wp_trim_words( get_the_content(), 120, '...');
 
 ?>
 <div class="offset-md-2 col-md-8 col-sm-12 m-t-10 og-border-1">
-    <div class="og-box og-color-b1">
+    <div class="og-box og-background-1">
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="og-body">

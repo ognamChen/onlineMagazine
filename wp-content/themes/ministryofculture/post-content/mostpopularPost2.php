@@ -12,7 +12,7 @@ $args = array(
 );
 ?>
 <section id="editorChoiceTag">
-    <div class="og-box og-color-b1" style="height:380px;">
+    <div class="og-box og-background-1" style="height:380px;">
         <div class="og-category">
             <p class="tag">本月熱門文章<div class="og-under-green-1"></div></p>
         </div>

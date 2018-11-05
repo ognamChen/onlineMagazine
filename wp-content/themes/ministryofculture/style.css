@@ -111,8 +111,9 @@ footer a:hover {
   }
 } */
 
-.og-color-b1 {
+.og-background-1 {
   background-color: #f8f9fa !important;
+  /* background-color: white; */
 }
 
 .og-color-b2 {

@@ -17,7 +17,7 @@
         $category_name = get_category_by_slug( $category_slug)->name;
         $excerpt = wp_trim_words( get_the_excerpt($product), 45, '...');
     ?>
-    <div class="og-box og-color-b1">
+    <div class="og-box og-background-1">
         
         <a href="<?php echo $permalink ?>">
             <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">

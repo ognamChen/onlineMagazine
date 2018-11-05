@@ -15,7 +15,7 @@ Template Name: Page
 			<div class="col-md-8 p-r-0 p-l-0">
 				<?php get_template_part('post-content/currentPost');?>
 			</div>
-			<div class="col-md-4 p-r-0 p-l-0 m-l--1 fix-height h420">
+			<div class="col-md-4 p-r-0 p-l-0 m-l--1">
 				<div class="jq_home_search og-border-1 fix-height h70"><?php echo get_search_form(); ?></div>
 				<div class="og-border-1 fix-height h350"><?php get_template_part('post-content/uncategorizedPost');?></div>
 			</div>

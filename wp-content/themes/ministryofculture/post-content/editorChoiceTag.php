@@ -1,5 +1,5 @@
 <section id="editorChoiceTag">
-    <div class="og-box og-color-b1">
+    <div class="og-box og-background-1">
         <div class="og-category">
             <p class="tag">編輯推薦<div class="og-under-green-1"></div></p>
         </div>

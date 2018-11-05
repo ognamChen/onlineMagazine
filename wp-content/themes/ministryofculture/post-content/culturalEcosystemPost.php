@@ -18,7 +18,7 @@
         $excerpt = wp_trim_words( get_the_excerpt($product), 80, '...');
 
     ?>
-    <div class="og-box og-color-b1">
+    <div class="og-box og-background-1">
         <a href="<?php echo $permalink ?>">
             <div class="og-breadth m-b-10">
                 <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
