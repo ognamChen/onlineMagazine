@@ -257,8 +257,9 @@ footer a:hover {
 }
 
 .og-box .title:hover {
-  color: #1b1e21;
-  font-size: 26px;
+  /* color: #1b1e21; */
+  color: #de270f;
+  /* font-size: 26px; */
 }
 
 .og-box .meta:hover {
@@ -374,7 +375,7 @@ footer a:hover {
 
 .og-carousel .carousel-inner {
   cursor: pointer;
-  max-height: 410px;
+  max-height: 420px;
   overflow: hidden;
 }
 

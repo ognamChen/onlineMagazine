@@ -24,7 +24,7 @@ Template Name: Page
 			<div class="col-md-4 og-border-1" >
 				<?php get_template_part('post-content/culturalTag');?>
 			</div>
-			<div class="col-md-8 og-border-1 m-l--1">
+			<div class="col-md-8 og-border-1 fix-height m-l--1">
 				<?php get_template_part('post-content/culturalEcosystemPost');?>
 			</div> 
 		</div>
