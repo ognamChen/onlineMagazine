@@ -2,14 +2,6 @@
 <?php get_template_part('nav');?>
 <!-- 設定不同文章格式 (format) 產生不同頁面-->
 <section id="post_content">
-    <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="offset-md-10 col-md-2">
-                <?php echo get_search_form(); ?>
-            </div>
-        </div>
-    </div> -->
-    <div class="m-t-30"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 og-border-1">

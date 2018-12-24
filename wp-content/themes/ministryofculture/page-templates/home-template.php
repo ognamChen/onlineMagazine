@@ -12,49 +12,49 @@ Template Name: Page
 <main>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 mh-item p-t-15 p-b-15">
+			<div class="col-md-8 mh-item">
 				<?php get_template_part('post-content/currentPost');?>
 			</div>
-			<div class="col-md-4 mh-item p-t-15 p-b-15">
+			<div class="col-md-4 mh-item">
 				<div class="jq_home_search og-border-1"><?php echo get_search_form(); ?></div>
 				<div class="og-border-1"><?php get_template_part('post-content/uncategorizedPost');?></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 mh-item p-t-15 p-b-15" >
+			<div class="col-md-4 mh-item" >
 				<div class="og-border-1">
 					<?php get_template_part('post-content/culturalTag');?>
 				</div>
 			</div>
-			<div class="col-md-8 mh-item p-t-15 p-b-15">
+			<div class="col-md-8 mh-item">
 				<div class="og-border-1">
 					<?php get_template_part('post-content/culturalEcosystemPost');?>
 				</div>
 			</div> 
 		</div>
 		<div class="row">
-			<div class="col-md-8 mh-item p-t-15 p-b-15">
+			<div class="col-md-8 mh-item">
 				<div class="row">
-					<div class="col-md-12 p-t-15 p-b-15">
+					<div class="col-md-12">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/culturalResearchPost');?>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 p-t-15 p-b-15">
+					<div class="col-md-6">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/editorChoiceTag');?>
 						</div>
 					</div>
-					<div class="col-md-6 p-t-15 p-b-15">
+					<div class="col-md-6">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/baseHistoryPost');?>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 p-t-15 p-b-15">
+					<div class="col-md-12">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/internationalObservationPost');?>
 						</div>
@@ -63,17 +63,17 @@ Template Name: Page
 			</div>
 			<div class="col-md-4 mh-item">
 				<div class="row">
-					<div class="col-md-12 p-t-15 p-b-15">
+					<div class="col-md-12">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/culturalExperimenterPost');?>
 						</div>
 					</div>
-					<div class="col-md-12 p-t-15 p-b-15">
+					<div class="col-md-12">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/mostpopularPost');?>
 						</div>
 					</div>
-					<div class="col-md-12 p-t-15 p-b-15">
+					<div class="col-md-12">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/echoPost');?>
 						</div>

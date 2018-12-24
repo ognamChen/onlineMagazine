@@ -1,14 +1,14 @@
 <div class="header-spacer"></div>
 <header class="header header--stuck">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-6 col-md-2">
 				<a href="https://clab.org.tw" class="header__logo">
 					<img width="512" height="146" src="https://clab.org.tw/wp-content/uploads/2018/08/clab-logo.png" class="attachment-large size-large" alt="">
 				</a>
 			</div>
-			<div class="col-xs-12 col-md-8 header__menu-wrapper d-none d-sm-block">
-				<div id="navbar-content" class="navbar-collapse main-menu-container">
+			<div class="col-xs-12 col-md-10 header__menu-wrapper d-none d-sm-block">
+				<div id="navbar-content" class="navbar-collapse main-menu-container pull-right">
 					<ul id="menu-main-menu" class="menu">
 					<?php 
 						$menu_locations = get_nav_menu_locations();

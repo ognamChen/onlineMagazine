@@ -1,7 +1,7 @@
 <header>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6 col-12">
+      <!-- <div class="col-md-6 col-12">
         <div class="icon_nav">
           <ul class="nav justify-content-end">
           <?php 
@@ -17,11 +17,11 @@
               <?php } ?>
           </ul>
         </div>
-      </div> 
+      </div>  -->
       <div class="col-md-6 col-12">
         <a href="<?php echo get_home_url(); ?>">
           <div class="header_image m-t-30">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri() . "/assets/img/TripleDeerLogo2.png" ;?>" alt="">
+            <img width="512" height="146" src="https://clab.org.tw/wp-content/uploads/2018/08/clab-logo.png" class="attachment-large size-large" alt="">
           </div>
         </a>
       </div>
