@@ -122,7 +122,8 @@ footer a:hover {
 
 .og-border-1 {
   border: 1px solid #dee2e6;
-  padding: 0px !important;
+  padding: 10px;
+  /* padding: 0px !important; */
 }
 
 .og-under-orange-1 {

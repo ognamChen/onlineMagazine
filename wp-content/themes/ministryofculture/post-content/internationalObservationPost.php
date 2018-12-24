@@ -17,10 +17,11 @@
         $category_name = get_category_by_slug( $category_slug)->name;
         $excerpt = wp_trim_words( get_the_excerpt($product), 45, '...');
     ?>
-    <div class="og-box og-background-1">
-        
+    <div class="og-box og-background-1">  
         <a href="<?php echo $permalink ?>">
-            <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
+            <div class="og-breadth m-b-10">
+                <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
+            </div>
         </a>
         <div class="og-category">
             <a href="<?php echo $category_url ?>">

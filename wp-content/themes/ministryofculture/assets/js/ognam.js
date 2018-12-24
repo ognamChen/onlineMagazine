@@ -12,6 +12,16 @@ $(document).ready(function () {
         $(".og-under-orange-1", this).css("background-color", "white");
     });
     // $("img").addClass("img-fluid");
+
+    // match Height
+    $(".mh-item").matchHeight({
+        byRow: true,
+        property: 'height',
+        target: null,
+        remove: false
+    });
+
+
     fixAutofunc();
 
     $(window).resize(function () {
@@ -24,14 +34,14 @@ $(document).ready(function () {
     function fixAutofunc() {
         var width = $(window).width();
         if (width <= 767) {
-            $(".fix-height").each(function () {
-                $(this).addClass("hauto");
-            });
+            // $(".fix-height").each(function () {
+            //     $(this).addClass("hauto");
+            // });
             $(".jq_home_search").hide();
         } else {
-            $(".fix-height").each(function () {
-                $(this).removeClass("hauto");
-            });
+            // $(".fix-height").each(function () {
+            //     $(this).removeClass("hauto");
+            // });
             $(".jq_home_search").show();
         }
     }

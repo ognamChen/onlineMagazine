@@ -1,5 +1,5 @@
 <section id="currentPost">
-    <div id="carouselExampleIndicators" class="carousel slide og-carousel fix-height h420" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide og-carousel og-border-1" data-ride="carousel">
         <!-- <div class="d-none d-sm-block"> -->
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
