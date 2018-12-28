@@ -14,7 +14,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-  background-color: #FAFAFA !important;
+  background-color: #fafafa !important;
   word-break: break-all !important;
 }
 
@@ -27,7 +27,7 @@ body img {
 }
 
 main {
-  padding-right:10px;
+  padding-right: 10px;
   padding-left: 10px;
 }
 
@@ -38,12 +38,11 @@ p {
   color: #1b1e21;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   p {
     font-size: 13px;
   }
 }
-
 
 img,
 video {
@@ -76,7 +75,7 @@ h3 {
   color: #1b1e21 !important;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -226,7 +225,7 @@ footer a:hover {
   -o-transition: 0.5s;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .og-box .title {
     font-size: 16px;
   }
@@ -317,7 +316,7 @@ footer a:hover {
   color: #343a40;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .og-category p {
     font-size: 14px;
   }
@@ -344,7 +343,7 @@ footer a:hover {
   color: #343a40;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .og-category .tag {
     font-size: 14px;
   }
@@ -385,19 +384,20 @@ footer a:hover {
 
 .og-carousel .carousel-inner .og-body {
   position: absolute;
-  right: 0;
-  bottom: 127px;
-  left: 0;
+  right: 25%;
+  bottom: 150px;
+  /* left: 0; */
   z-index: 15;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  margin: 15px;
+  margin: 0 auto;
   display: block;
   border: 3px solid #fff;
   background-color: #0000006e;
+  width: 50%;
 }
 
 @media (max-width: 575px) {
@@ -418,7 +418,7 @@ footer a:hover {
   color: white !important;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .og-carousel h2 {
     font-size: 1.2rem;
   }
@@ -504,8 +504,7 @@ footer a:hover {
   -o-transition: 0.5s;
 }
 
-@media (max-width:767px) {
-
+@media (max-width: 767px) {
   .wpp-list a,
   .wpp-list a p {
     font-size: 16px;
@@ -552,9 +551,8 @@ footer a:hover {
   border: 1px solid #bdbdbd;
 }
 
-
 .navigation li.active a {
-  color: #FAFAFA;
+  color: #fafafa;
   background-color: #1b1e21;
 }
 
