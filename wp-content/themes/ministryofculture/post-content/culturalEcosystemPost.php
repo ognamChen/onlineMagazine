@@ -23,11 +23,11 @@
             <img class="card-img-top" src="<?php echo $image ?>" alt="Card image cap">
         </a>    
         <div class="card-body">
-            <h5 class="card-title"><?php echo $product->post_title ?></h5>
             <a href="<?php echo $category_url ?>">
                 <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-bookmark"></i> <?php echo $category_name; ?></h6>
             </a>
             <a href="<?php echo $permalink ?>">
+                <h5 class="card-title"><?php echo $product->post_title ?></h5>
                 <p class="card-text"><?php echo $excerpt; ?></p>
             </a>
         </div>

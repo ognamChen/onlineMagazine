@@ -13,9 +13,11 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+/* basic start */
+
 body {
-  background-color: #f7f7f7 !important;
-  word-break: break-all !important;
+  background-color: #f7f7f7;
+  /* word-break: break-all !important; */
 }
 
 main {
@@ -26,20 +28,51 @@ main {
 p {
   font-size: 14px;
   font-weight: 400;
-  /* letter-spacing: 2px; */
   color: #1b1e21;
 }
 
-@media (max-width: 767px) {
-  p {
-    font-size: 13px;
-  }
+a {
+  color: #bdbdbd;
+}
+
+a:hover {
+  color: #de270f;
 }
 
 img,
 video {
   height: auto;
   max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px;
+  color: #1b1e21 !important;
+}
+
+footer {
+  margin: 20px 0 !important;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+/* basic end */
+
+.header_image img {
+  /* margin: 0 auto; */
+  margin-left: 60px;
+  width: 300px;
+  filter: brightness(80%);
+  /* float: right; */
 }
 
 .wp-caption,
@@ -57,49 +90,6 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-
-h1,
-h2,
-h3 {
-  padding: 10px;
-  color: #1b1e21 !important;
-}
-
-@media (max-width: 767px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-footer {
-  margin: 20px 0 !important;
-}
-
-footer a {
-  color: #bdbdbd;
-}
-
-footer a:hover {
-  color: #de270f;
-}
-
-.header_image img {
-  /* margin: 0 auto; */
-  margin-left: 60px;
-  width: 300px;
-  filter: brightness(80%);
-  /* float: right; */
-}
-
-/* .header-spacer {
-  height: 150px;
-}
-
-@media (max-width: 575px) {
-  .header-spacer {
-    height: 85px;
-  }
-} */
 
 .og-background-1 {
   background-color: #fff;
@@ -269,6 +259,7 @@ footer a:hover {
   padding: 10px;
   font-size: 1.5rem;
 }
+
 .og-post h2,
 .og-post h3 {
   padding: 10px;
@@ -323,6 +314,7 @@ footer a:hover {
   margin-bottom: 0;
   font-size: 1.5rem;
 }
+
 .og-category h2,
 .og-category h3 {
   padding: 10px;
@@ -498,6 +490,7 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+
   .wpp-list a,
   .wpp-list a p {
     font-size: 16px;

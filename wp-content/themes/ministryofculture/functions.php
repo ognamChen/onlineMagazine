@@ -23,11 +23,11 @@ $GLOBALS['content_width'] = 525;
 add_action('wp_enqueue_scripts', 'add_styles');
 function add_styles()
 {
-    wp_enqueue_style('ognam_style', get_template_directory_uri() . "/assets/css/ognam.css");
-    wp_enqueue_style('main_style', get_stylesheet_uri());
     wp_enqueue_style('cLab_style', get_template_directory_uri() . "/assets/css/cLab.css");
     wp_enqueue_style('bootstrap_min_4', get_template_directory_uri() . "/assets/bootstrap/css/bootstrap.min.css");
     wp_enqueue_style('fontawsome5', get_template_directory_uri() . '/assets/fontawesome/webfonts/all.css');
+    wp_enqueue_style('ognam_style', get_template_directory_uri() . "/assets/css/ognam.css");
+    wp_enqueue_style('main_style', get_stylesheet_uri());
 }
 
 add_action('wp_enqueue_scripts', 'update_jquery_version');
