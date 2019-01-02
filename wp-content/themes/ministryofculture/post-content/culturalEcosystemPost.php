@@ -18,23 +18,19 @@
         $excerpt = wp_trim_words( get_the_excerpt($product), 80, '...');
 
     ?>
-    <div class="og-box og-background-1">
+    <div class="card">
         <a href="<?php echo $permalink ?>">
-            <div class="og-breadth m-b-10">
-                <img class="img-fluid p-b-10" src="<?php echo $image ?>" alt="" srcset="">
-            </div>
-        </a>
-        <div class="og-category">
+            <img class="card-img-top" src="<?php echo $image ?>" alt="Card image cap">
+        </a>    
+        <div class="card-body">
+            <h5 class="card-title"><?php echo $product->post_title ?></h5>
             <a href="<?php echo $category_url ?>">
-                <p class=""><?php echo "分類：".$category_name; ?><div class="og-under-orange-1"></div></p>
+                <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-bookmark"></i> <?php echo $category_name; ?></h6>
+            </a>
+            <a href="<?php echo $permalink ?>">
+                <p class="card-text"><?php echo $excerpt; ?></p>
             </a>
         </div>
-        <a href="<?php echo $permalink ?>">
-            <div class="og-body">
-                <p class="title"><?php echo $product->post_title ?></p>
-                <p class="meta"><?php echo $excerpt; ?></p>
-            </div>
-        </a>
     </div>
     <?php }?>
     <!-- end repeat -->

@@ -13,11 +13,14 @@ Template Name: Page
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 mh-item">
+				<!-- 最新文章 -->
 				<?php get_template_part('post-content/currentPost');?>
 			</div>
 			<div class="col-md-4 mh-item">
-				<div class="jq_home_search og-border-1"><?php echo get_search_form(); ?></div>
-				<div class="og-border-1"><?php get_template_part('post-content/uncategorizedPost');?></div>
+				<div class="og-border-1">
+					<!-- 熱門文章 -->
+					<?php get_template_part('post-content/mostpopularPost');?>
+				</div>
 			</div>
 		</div>
 		<div class="row">

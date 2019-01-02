@@ -14,16 +14,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body {
-  background-color: #fafafa !important;
+  background-color: #f7f7f7 !important;
   word-break: break-all !important;
-}
-
-body img {
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 main {
@@ -47,9 +39,7 @@ p {
 img,
 video {
   height: auto;
-  /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */
 }
 
 .wp-caption,
@@ -112,7 +102,7 @@ footer a:hover {
 } */
 
 .og-background-1 {
-  background-color: #f8f9fa !important;
+  background-color: #fff;
   /* background-color: white; */
 }
 
@@ -121,7 +111,9 @@ footer a:hover {
 }
 
 .og-border-1 {
-  border: 1px solid #dee2e6;
+  /* border-radius: 5px; */
+  /* border: 1px solid #dee2e6; */
+  /* background: #fff; */
   padding: 10px;
   margin: 15px auto;
   /* padding: 0px !important; */
@@ -177,7 +169,7 @@ footer a:hover {
 
 .og-box {
   overflow: hidden;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .og-box a:hover {
@@ -338,8 +330,9 @@ footer a:hover {
 }
 
 .og-category .tag {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 20px 20px 5px;
   color: #343a40;
 }
 
@@ -496,7 +489,7 @@ footer a:hover {
 .wpp-list a,
 .wpp-list a p {
   color: #1b1e21;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 500;
   transition: 0.5s;
   -webkit-transition: 0.5s;
