@@ -20,7 +20,7 @@
 
     <div class="card mh-item">
         <a href="<?php echo $permalink ?>">
-            <div class="og-breadth">
+            <div class="og-breadth-2">
                 <img class="card-img-top" src="<?php echo $image ?>" alt="">
             </div>
         </a>    

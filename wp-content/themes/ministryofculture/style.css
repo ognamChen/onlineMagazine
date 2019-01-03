@@ -16,7 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* basic s */
 
 body {
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 
 main {
@@ -192,6 +192,11 @@ footer {
 .og-breadth {
   overflow: hidden;
   height: 200px;
+}
+
+.og-breadth-2 {
+  overflow: hidden;
+  height: 150px;
 }
 
 .og-box .og-breadth:hover {
@@ -623,5 +628,5 @@ footer {
 /* bootstrap custom s */
 .card {
   border: unset;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
