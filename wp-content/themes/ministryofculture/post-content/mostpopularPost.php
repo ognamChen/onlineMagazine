@@ -6,11 +6,10 @@ $args = array(
 );
 ?>
 <section id="editorChoiceTag">
-    <div class="og-category">
-        
-        <p class="tag"><i class="fas fa-fire"></i> 本月熱門文章<div class="og-under-green-1"></div></p>
-    </div>
     <div class="og-box og-background-1">
+        <div class="og-category">
+            <p class="tag text-muted"><i class="text-danger fas fa-fire"></i> 本月熱門文章<div class="og-under-green-1"></div></p>
+        </div> 
         <div class="og-body">
         <?php
         if (function_exists('wpp_get_mostpopular'))

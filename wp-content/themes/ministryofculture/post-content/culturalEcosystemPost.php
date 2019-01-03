@@ -18,13 +18,15 @@
         $excerpt = wp_trim_words( get_the_excerpt($product), 80, '...');
 
     ?>
-    <div class="card">
+    <div class="card mh-item">
         <a href="<?php echo $permalink ?>">
-            <img class="card-img-top" src="<?php echo $image ?>" alt="Card image cap">
+            <div class="og-breadth">
+                <img class="card-img-top" src="<?php echo $image ?>" alt="">
+            </div>
         </a>    
         <div class="card-body">
             <a href="<?php echo $category_url ?>">
-                <h6 class="card-subtitle mb-2 text-muted"><i class="fas fa-bookmark"></i> <?php echo $category_name; ?></h6>
+                <p class="card-subtitle mb-2 text-muted"><i class="text-info fas fa-bookmark"></i> <?php echo $category_name; ?></p>
             </a>
             <a href="<?php echo $permalink ?>">
                 <h5 class="card-title"><?php echo $product->post_title ?></h5>
