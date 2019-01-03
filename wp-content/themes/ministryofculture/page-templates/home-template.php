@@ -26,6 +26,11 @@ Template Name: Page
 		<div class="row">
 			<div class="col-md-9 p-r-5 p-l-5">
 				<div class="row">
+					<div class="col-md-12 p-r-5 p-l-5">
+						<div class="og-border-1">
+							<?php get_template_part('post-content/culturalExperimenterPost');?>
+						</div>
+					</div>
 					<div class="col-md-6 p-r-5 p-l-5">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/culturalEcosystemPost');?>
@@ -49,11 +54,6 @@ Template Name: Page
 					<div class="col-md-4 p-r-5 p-l-5">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/echoPost');?>
-						</div>
-					</div>
-					<div class="col-md-12 p-r-5 p-l-5">
-						<div class="og-border-1">
-							<?php get_template_part('post-content/culturalExperimenterPost');?>
 						</div>
 					</div>
 				</div>

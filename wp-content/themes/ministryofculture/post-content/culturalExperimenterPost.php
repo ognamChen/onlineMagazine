@@ -19,19 +19,25 @@
 
     ?>
     <div class="card mh-item">
-        <a href="<?php echo $permalink ?>">
-            <div class="og-breadth">
-                <img class="card-img-top" src="<?php echo $image ?>" alt="">
+        <div class="row">
+            <div class="col-md-8">
+                <a href="<?php echo $permalink ?>">
+                    <div class="">
+                        <img class="card-img-top" src="<?php echo $image ?>" alt="">
+                    </div>
+                </a>    
             </div>
-        </a>    
-        <div class="card-body">
-            <a href="<?php echo $category_url ?>">
-                <p class="card-subtitle mb-2 text-muted"><i class="text-info fas fa-bookmark"></i> <?php echo $category_name; ?></p>
-            </a>
-            <a href="<?php echo $permalink ?>">
-                <h5 class="card-title"><?php echo $product->post_title ?></h5>
-                <p class="card-text"><?php echo $excerpt; ?></p>
-            </a>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <a href="<?php echo $category_url ?>">
+                        <p class="card-subtitle mb-2 text-muted"><i class="text-info fas fa-bookmark"></i> <?php echo $category_name; ?></p>
+                    </a>
+                    <a href="<?php echo $permalink ?>">
+                        <h5 class="card-title"><?php echo $product->post_title ?></h5>
+                        <p class="card-text"><?php echo $excerpt; ?></p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
