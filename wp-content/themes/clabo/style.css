@@ -1,5 +1,5 @@
 /*
-Theme Name: ministryofculture
+Theme Name: clabo
 Theme URI: 
 Author: 
 Author URI: 
@@ -16,13 +16,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* basic start */
 
 body {
-  background-color: rgb(245,245,245);
+  background-color: rgba(245, 245, 245, 1);
   /* word-break: break-all !important; */
 }
 
-main {
-  padding-right: 10px;
-  padding-left: 10px;
+section {
+  border-bottom: 1px solid rgba(170, 170, 170, 0.5);
+  border-top: 1px solid rgba(170, 170, 170, 0.5);
+  margin-bottom: -1px;
+  padding: 0;
 }
 
 p {
@@ -32,11 +34,12 @@ p {
 }
 
 a {
-  color: #bdbdbd;
+  color: inherit;
 }
 
 a:hover {
-  color: #de270f;
+  text-decoration: none;
+  color: inherit;
 }
 
 img,
@@ -64,8 +67,68 @@ footer {
     font-size: 13px;
   }
 }
-
 /* basic end */
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+/* point start */
+.point_description {
+  display: inline-block;
+}
+
+.point_title {
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 40px;
+  padding: 10px;
+}
+
+.point_title span {
+  color: rgba(170, 170, 170, 1);
+  font-weight: 100;
+}
+
+.point_excerpt {
+  color: rgba(170, 170, 170, 1);
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  padding: 10px;
+}
+
+.point_img {
+  overflow: hidden;
+  padding: 10px;
+}
+
+.point_img img {
+}
+/* point end */
+
+/* feature start */
+.feature_main {
+  color: rgba(170, 170, 170, 1);
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  padding: 10px;
+}
+.feature_main_img img {
+  margin: 10px;
+}
+
+.feature_main_title {
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 40px;
+  padding: 10px;
+}
+/* feature end */
 
 .header_image img {
   /* margin: 0 auto; */
@@ -490,7 +553,6 @@ footer {
 }
 
 @media (max-width: 767px) {
-
   .wpp-list a,
   .wpp-list a p {
     font-size: 16px;
