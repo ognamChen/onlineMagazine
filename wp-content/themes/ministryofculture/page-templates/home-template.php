@@ -18,72 +18,51 @@ Template Name: Page
 			</div>
 			<div class="col-md-4 mh-item">
 				<div class="og-border-1">
-					<!-- 熱門文章 -->
-					<?php get_template_part('post-content/mostpopularPost');?>
+					<!-- 不分類 -->
+					<?php get_template_part('post-content/uncategorizedPost');?>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4 mh-item" >
-				<div class="og-border-1">
-					<?php get_template_part('post-content/culturalTag');?>
-				</div>
-			</div>
-			<div class="col-md-8 mh-item">
-				<div class="og-border-1">
-					<?php get_template_part('post-content/culturalEcosystemPost');?>
-				</div>
-			</div> 
-		</div>
-		<div class="row">
-			<div class="col-md-8 mh-item">
+			<div class="col-md-9 p-r-5 p-l-5">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="og-border-1">
-							<?php get_template_part('post-content/culturalResearchPost');?>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="og-border-1">
-							<?php get_template_part('post-content/editorChoiceTag');?>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="og-border-1">
-							<?php get_template_part('post-content/baseHistoryPost');?>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="og-border-1">
-							<?php get_template_part('post-content/internationalObservationPost');?>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 mh-item">
-				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 p-r-5 p-l-5">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/culturalExperimenterPost');?>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-6 p-r-5 p-l-5">
 						<div class="og-border-1">
-							<?php get_template_part('post-content/mostpopularPost');?>
+							<?php get_template_part('post-content/culturalEcosystemPost');?>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-6 p-r-5 p-l-5">
+						<div class="og-border-1">
+							<?php get_template_part('post-content/culturalResearchPost');?>
+						</div>
+					</div>
+					<div class="col-md-4 p-r-5 p-l-5">
+						<div class="og-border-1">
+							<?php get_template_part('post-content/baseHistoryPost');?>
+						</div>
+					</div>
+					<div class="col-md-4 p-r-5 p-l-5">
+						<div class="og-border-1">
+							<?php get_template_part('post-content/internationalObservationPost');?>
+						</div>
+					</div>
+					<div class="col-md-4 p-r-5 p-l-5">
 						<div class="og-border-1">
 							<?php get_template_part('post-content/echoPost');?>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-3 p-r-5 p-l-5">
+				<?php get_sidebar(); ?>
+			</div>
 		</div>
+		
 	</div>
 </main>
 <?php get_footer();

@@ -13,7 +13,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* basic start */
+/* basic s */
 
 body {
   background-color: rgb(245,245,245);
@@ -32,11 +32,12 @@ p {
 }
 
 a {
-  color: #bdbdbd;
+  color: #1b1e21;
 }
 
 a:hover {
   color: #de270f;
+  text-decoration: none;
 }
 
 img,
@@ -65,7 +66,10 @@ footer {
   }
 }
 
-/* basic end */
+/* basic e */
+
+
+
 
 .header_image img {
   /* margin: 0 auto; */
@@ -188,7 +192,12 @@ footer {
 
 .og-breadth {
   overflow: hidden;
-  max-height: 300px;
+  height: 200px;
+}
+
+.og-breadth-2 {
+  overflow: hidden;
+  height: 150px;
 }
 
 .og-box .og-breadth:hover {
@@ -474,8 +483,13 @@ footer {
   color: #de270f !important;
 }
 
+.wpp-list {
+  padding-inline-start: 0px;
+  padding: 10px;
+}
+
 .wpp-list li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .wpp-list a,
@@ -609,4 +623,11 @@ footer {
 .fix-height.hauto {
   height: auto !important;
   margin-top: 10px;
+}
+
+
+/* bootstrap custom s */
+.card {
+  border: unset;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
