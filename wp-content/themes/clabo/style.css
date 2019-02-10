@@ -14,6 +14,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* basic start */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: rgba(245, 245, 245, 1);
@@ -241,7 +244,16 @@ footer {
 .posts {
   /* background: #fff; */
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(170, 170, 170, 1);
+  /* border-bottom: 1px solid rgba(170, 170, 170, 1); */
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.posts.hide {
+
+  display: none;
 }
 
 .posts img {
