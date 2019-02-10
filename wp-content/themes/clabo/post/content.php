@@ -4,26 +4,28 @@
 <section id="post_content">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 og-border-1">
-                <div class="og-post">
-                    <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
-                    <p style="color:red;"><?php echo get_the_post_thumbnail_caption() ?></p>
-                    <div class="title m-b-30">
-                        <h1><?php the_title();?></h1>
-                        <div class="info">
+            <div class="col-md-12">
+                <div class="post_content">
+                    <div class="post_content_img">
+                        <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
+                        <p><?php echo get_the_post_thumbnail_caption() ?></p>
+                    </div>
+                    <div class="post_content_head">
+                        <div class="post_content_title"><?php the_title();?></div>
+                        <div class="post_content_info">
                             <ul class="list-inline">
-                                <li class="list-inline-item"><p>分類：<?php the_category(' ');?></p></li>
+                                <li class="list-inline-item"><p>〔分類〕<?php the_category(' ');?></p></li>
                                 <?php if (has_tag()) { ?>
                                     <li class="list-inline-item"><p><?php the_tags(null, ', ', null);?></p></li>
                                 <?php } ?>
-                                <li class="list-inline-item"><p>發佈時間：<span style="color:#1b1e21"><?php the_time('Y/m/j a g:i');?></span></p></li>
+                                <!-- <li class="list-inline-item"><p>發佈時間：<span style="color:#1b1e21"><?php the_time('Y/m/j a g:i');?></span></p></li> -->
                             </ul>
                         </div>
-                        <div class="m-l-30 p-l-30 m-r-30 p-r-30">
+                        <div class="post_content_excerpt">
                             <?php the_excerpt();?>
                         </div>
                     </div>
-                    <div class="meta">
+                    <div class="post_content_main">
                         <p><?php the_content();?></p>
                     </div>
                 </div>

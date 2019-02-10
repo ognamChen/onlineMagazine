@@ -13,8 +13,14 @@ Template Name: Page
 	<div class="container-fluid">
 		<!-- 焦點文章 -->
 		<?php get_template_part('post-content/point');?>
-		<!-- 熱門文章 -->
+		<!-- 專題文章 -->
 		<?php get_template_part('post-content/feature');?>
+		<!-- 其他文章 -->
+		<?php get_template_part('post-content/posts') ?>
+	</div>
+	<div class="container-fluid">
+		<!-- clabo+ -->
+		<?php get_template_part('post-content/claboPlus') ?>
 	</div>
 </main>
 <?php get_footer();

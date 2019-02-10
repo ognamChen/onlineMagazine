@@ -148,7 +148,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 4.8
+		 * @since 4.8.0
 		 *
 		 * @param array The default list of options.
 		 */
@@ -167,7 +167,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 6.1
+		 * @since 6.1.0
 		 *
 		 * @param array The list of options synced without content.
 		 */
@@ -193,7 +193,7 @@ class Jetpack_Sync_Defaults {
 		'WP_CRON_LOCK_TIMEOUT',
 		'PHP_VERSION',
 		'WP_MEMORY_LIMIT',
-		'WP_MAX_MEMORY_LIMIT'
+		'WP_MAX_MEMORY_LIMIT',
 	);
 
 	public static function get_constants_whitelist() {
@@ -202,7 +202,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 4.8
+		 * @since 4.8.0
 		 *
 		 * @param array The default list of constants options.
 		 */
@@ -240,6 +240,9 @@ class Jetpack_Sync_Defaults {
 		'site_icon_url'                    => array( 'Jetpack_Sync_Functions', 'site_icon_url' ),
 		'roles'                            => array( 'Jetpack_Sync_Functions', 'roles' ),
 		'timezone'                         => array( 'Jetpack_Sync_Functions', 'get_timezone' ),
+		'available_jetpack_blocks'         => array( 'Jetpack_Gutenberg', 'get_availability' ), // Includes both Gutenberg blocks *and* plugins
+		'paused_themes'                    => array( 'Jetpack_Sync_Functions', 'get_paused_themes' ),
+		'paused_plugins'                   => array( 'Jetpack_Sync_Functions', 'get_paused_plugins' ),
 	);
 
 
@@ -281,7 +284,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 4.8
+		 * @since 4.8.0
 		 *
 		 * @param array The default list of callables.
 		 */
@@ -355,7 +358,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 4.8
+		 * @since 4.8.0
 		 *
 		 * @param array The default list of multisite callables.
 		 */
@@ -408,7 +411,7 @@ class Jetpack_Sync_Defaults {
 		 *
 		 * @module sync
 		 *
-		 * @since 4.8
+		 * @since 4.8.0
 		 *
 		 * @param array The default list of meta data keys.
 		 */
@@ -456,7 +459,8 @@ class Jetpack_Sync_Defaults {
 	);
 
 	static function is_whitelisted_option( $option ) {
-		foreach ( self::$default_options_whitelist as $whitelisted_option ) {
+		$whitelisted_options = self::get_options_whitelist();
+		foreach ( $whitelisted_options as $whitelisted_option ) {
 			if ( $whitelisted_option[0] === '/' && preg_match( $whitelisted_option, $option ) ) {
 				return true;
 			} elseif ( $whitelisted_option === $option ) {

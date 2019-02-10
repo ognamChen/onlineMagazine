@@ -5,63 +5,51 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage 
+ * @subpackage
  * @since 1.0
  * @version 1.0
  */
 ?>
 <?php get_header();?>
 <?php get_template_part('nav');?>
-<?php
-
-?>
 <main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="offset-md-10 col-md-2">
-                <?php echo get_search_form(); ?>
-            </div>
-        </div>
-        <div class="m-t-30"></div>
-        <div class="row og-border-1">
-            <div class="offset-md-2 col-md-10">
-                <div class="og-category">
-                    <h1><?php single_tag_title(); ?><div class="og-under-orange-2"></div></h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="m-t-30"></div>
     <div class="container">
-        <div class="row">  
-        <?php
-        if ( have_posts() ) : ?>
-            <?php
-            while ( have_posts() ) : the_post();
-                get_template_part( 'post/archive-content', get_post_format() );
-            endwhile; ?>
-        <?php     
-        else :
-            // get_template_part( 'template-parts/post/content', 'none' );
-        endif; ?>
+        <div class="category_page">
+            <div class="row" style="">
+                <?php if (category_description( $category_id ) == ""): ?>
+                    <div class="col-md-12">
+                        <div class="category_page_title">
+                            〔<?php single_tag_title();?>〕
+                        </div>
+                    </div>
+                <?php else: ?>
+                    <div class="col-md-12">
+                        <div class="category_page_title">
+                            〔<?php single_tag_title();?>〕
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="category_page_img JQ"></div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="category_page_content">
+                            <?php echo category_description( $category_id ); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
-        <div class="m-t-30"></div>
-        <hr>
-        <div class="row">
-            <div class="offset-md-2 col-md-8 col-sm-12 m-t-30 text-center">
-                <?php wpbeginner_numeric_posts_nav(); ?>
-            </div>
-            <div class="col-md-4 fix-height h380">
-                <?php get_template_part('post-content/culturalTag');?>
-            </div>
-            <div class="col-md-4 fix-height h380">
-                <?php get_template_part('post-content/editorChoiceTag');?>
-            </div>
-            <div class="col-md-4 fix-height h380">
-                <?php get_template_part('post-content/mostpopularPost2');?>
+        <div class="category_page_list">
+            <div class="row">
+                <?php if (have_posts()): ?>
+                <?php while (have_posts()): the_post();
+                    get_template_part('post/archive-content', get_post_format());
+                endwhile; ?>
+            <?php else:
+        // get_template_part( 'template-parts/post/content', 'none' );
+                endif; ?>
             </div>
         </div>
     </div>
 </main>
-
 <?php get_footer();
