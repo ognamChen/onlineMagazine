@@ -41,7 +41,7 @@ $posts = get_posts($args);
                         $category_url = get_category_link($category_id);
                         ?>
                         <!-- PHP repeat start  -->
-                        <a href="<?php echo "#".$post->ID; ?>" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
+                        <a href="javascript:void();" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
                             <div class="claboList posts posts_mh">                                
                                 <div class="posts_img">
                                     <img class="img-fluid" src="<?php echo $image ?>" alt="" srcset="">
@@ -76,21 +76,29 @@ $posts = get_posts($args);
                     $category_url = get_category_link($category_id);
                     ?>
                     <!-- PHP repeat start 2 -->
-                    <div class="claboItem posts hide" id="<?php echo $post->ID ?>">
-                        <a href="<?php echo $permalink ?>">
-                            <div class="posts_img">
-                                <img class="img-fluid" src="<?php echo $image ?>" alt="" srcset="">
-                            </div>
-                            <div class="posts_description">
-                                <div class="posts_title">
-                                    <span>〔<?php echo $category_name ?>〕</span>
-                                    <?php echo $post->post_title ?>
+                    <div class="claboItem point hide" id="<?php echo $post->ID ?>">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="point_description point_mh">
+                                    <a href="<?php echo $permalink ?>">
+                                        <div class="point_title">
+                                            <span>〔<?php echo $category_name ?>〕</span>
+                                            <?php echo $post->post_title ?>
+                                        </div>
+                                        <div class="point_excerpt">
+                                            <?php echo $excerpt; ?>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="posts_excerpt">
-                                    <?php echo $excerpt; ?>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="point_img point_mh">
+                                    <a href="<?php echo $permalink ?>">
+                                        <img class="img-fluid" src="<?php echo $image ?>" alt="" srcset="">
+                                    </a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 <?php }?>
                 <!-- PHP repeat end  -->  

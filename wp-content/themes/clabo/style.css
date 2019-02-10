@@ -59,7 +59,8 @@ h3 {
 }
 
 footer {
-  margin: 20px 0 !important;
+  background: #fff;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -84,6 +85,10 @@ footer {
   /* background: #fff; */
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(170, 170, 170, 1);
+}
+
+.claboItem.point {
+  border-bottom: none;
 }
 
 .point img {
@@ -126,9 +131,21 @@ footer {
   padding: 10px;
 }
 
+.claboItem .point_title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 10px;
+}
+
 .point_title span {
   color: rgba(0, 0, 255, 1);
   font-weight: 400;
+}
+
+.claboItem .point_title span {
+  color: rgba(0, 0, 0, 1);
 }
 
 .point_excerpt {
@@ -187,6 +204,10 @@ footer {
   line-height: 28px;
 }
 
+.feature_category_content p {
+  color: rgba(150, 150, 150, 1);
+}
+
 .feature_category_content img {
   padding-bottom: 20px;
 }
@@ -219,8 +240,8 @@ footer {
 }
 
 .feature_title {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  letter-spacing: 1px;
   font-weight: 400;
   line-height: 30px;
   padding: 10px;
@@ -251,11 +272,6 @@ footer {
   -o-transition: all 0.2s ease-in-out;
 }
 
-.posts.hide {
-
-  display: none;
-}
-
 .posts img {
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -278,15 +294,28 @@ footer {
 }
 
 .posts_title {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 17px;
+  letter-spacing: 1px;
   font-weight: 400;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.claboList .posts_title {
+  font-size: 17px;
+  letter-spacing: 0px;
+  font-weight: 300;
   line-height: 30px;
   padding: 10px;
 }
 
 .posts_title span {
   color: rgba(0, 0, 255, 1);
+  font-weight: 400;
+}
+
+.claboList .posts_title span {
+  color: rgba(0, 0, 0, 1);
   font-weight: 400;
 }
 
@@ -412,7 +441,7 @@ footer {
   font-weight: 300;
 }
 
-.post_content_main{
+.post_content_main {
   padding: 30px;
 }
 
@@ -438,7 +467,7 @@ footer {
   font-size: 16px !important;
   line-height: 34px !important;
   color: rgba(170, 170, 170, 1) !important;
-  font-weight: 400 !important; 
+  font-weight: 400 !important;
   font-style: initial !important;
 }
 .wp-caption,
@@ -461,6 +490,24 @@ img.aligncenter {
   margin: 0 auto;
 }
 /* wordpress end */
+
+/* clabo_plus_content start */
+.clabo_plus_content {
+  background: #fff;
+  padding-top: 60px;
+}
+
+.claboItem.hide {
+  display: none;
+}
+/* clabo_plus_content end */
+
+/* footer start */
+.footer_top {
+  padding: 15px 0;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+}
+/* footer end */
 
 .og-box {
   overflow: hidden;

@@ -58,6 +58,9 @@ $(document).ready(function() {
   $(".category_page_content a").remove();
   // category page separate img and content end
 
+  // clabo-plus
+  $(".claboItem").first().removeClass("hide");
+
   fixAutofunc();
 
   $(window).resize(function() {
@@ -79,12 +82,12 @@ $(document).ready(function() {
 
 // tabs start
 function showPost(id) {
-    var _this = $("div.claboItem#" + id);
-    if ($(_this).hasClass("hide")) {
-        $("div.claboItem#" + id).removeClass("hide");
-        $(_this).siblings().addClass("hide")
-    } else {
-
-    }  
+  var _this = $("div.claboItem#" + id);
+  if ($(_this).hasClass("hide")) {
+    $("div.claboItem#" + id).removeClass("hide");
+    $(_this)
+      .siblings()
+      .addClass("hide");
+  }
 }
 // tabs end

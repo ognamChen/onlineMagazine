@@ -18,7 +18,7 @@ Template Name: Page
 		<!-- 其他文章 -->
 		<?php get_template_part('post-content/posts') ?>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid clabo_plus_content">
 		<!-- clabo+ -->
 		<?php get_template_part('post-content/claboPlus') ?>
 	</div>
