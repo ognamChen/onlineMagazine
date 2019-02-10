@@ -509,6 +509,24 @@ img.aligncenter {
 }
 /* footer end */
 
+/* decorate start */
+.right_decorate {
+  position: fixed;
+  z-index: 0;
+  width: 40px;
+  height: 140px;
+  top: 200px;
+  right: 20px;
+  background: url(../clabo/assets/img/icon-2.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.left_decorate {
+
+}
+/* decorate end */
+
 .og-box {
   overflow: hidden;
   padding: 10px;
