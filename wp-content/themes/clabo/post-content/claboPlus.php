@@ -41,7 +41,8 @@ $posts = get_posts($args);
                         $category_url = get_category_link($category_id);
                         ?>
                         <!-- PHP repeat start  -->
-                        <a href="javascript:void();" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
+                        <!-- <a href="javascript:void();" onclick="javascript:showPost(<?php echo $post->ID; ?>);"> -->
+                        <a href="#<?php echo $post->ID; ?>" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
                             <div class="claboList posts posts_mh">                                
                                 <div class="posts_img">
                                     <img class="img-fluid" src="<?php echo $image ?>" alt="" srcset="">

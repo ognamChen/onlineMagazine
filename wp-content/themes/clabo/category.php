@@ -50,6 +50,9 @@
                 endif; ?>
             </div>
         </div>
+        <div class="category_pagination">
+            <?php wpbeginner_numeric_posts_nav(); ?>
+        </div>
     </div>
 </main>
 <?php get_footer();

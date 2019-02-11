@@ -58,11 +58,6 @@ h3 {
   color: #1b1e21 !important;
 }
 
-footer {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
@@ -74,11 +69,131 @@ footer {
 /* basic end */
 
 /* header start */
+.header_img {
+  display: inline-block;
+}
+
 .header_img img {
   width: 300px;
   padding: 20px;
 }
+
+@media (max-width: 576px) {
+  .header_img img {
+    width: 300px;
+    padding: 0;
+  }
+}
 /* heder end */
+
+/* sideMenu start */
+.sideMenuBtn {
+  display: inline-block;
+  /* position: absolute; */
+  float: right;
+  width: 60px;
+  height: 60px;
+  background: url(../clabo/assets/img/icon-menu.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 20px;
+  /* opacity: 0.8; */
+  /* transition: 0.2s; */
+}
+
+.sideMenuBtn:hover {
+  /* opacity: 1; */
+  transform: scale(1.02);
+}
+
+@media (max-width: 576px) {
+  .sideMenuBtn {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+  }
+}
+
+/* sideMenu end */
+
+/* overlay start */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 15; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bold;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* overlay end */
+
+/* decorate start */
+.right_decorate {
+  position: fixed;
+  z-index: 0;
+  width: 40px;
+  height: 140px;
+  top: 200px;
+  right: 20px;
+  background: url(../clabo/assets/img/icon-2.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.left_decorate {
+}
+/* decorate end */
 
 /* point start */
 .point {
@@ -351,7 +466,7 @@ footer {
   line-height: 40px;
   padding: 15px 0;
   color: rgba(0, 0, 255, 1);
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .category_page img {
@@ -383,6 +498,9 @@ footer {
   padding-top: 30px;
 }
 
+.category_pagination {
+  text-align: center;
+}
 /* category_page end */
 
 /* post_content start */
@@ -497,35 +615,27 @@ img.aligncenter {
   padding-top: 60px;
 }
 
+.claboItem {
+  border-top: 80px solid transparent; 
+}
+
 .claboItem.hide {
   display: none;
 }
 /* clabo_plus_content end */
 
 /* footer start */
+
+footer {
+  background: #fff;
+  padding-bottom: 30px;
+}
+
 .footer_top {
   padding: 15px 0;
   /* background-color: rgba(255, 255, 255, 0.9); */
 }
 /* footer end */
-
-/* decorate start */
-.right_decorate {
-  position: fixed;
-  z-index: 0;
-  width: 40px;
-  height: 140px;
-  top: 200px;
-  right: 20px;
-  background: url(../clabo/assets/img/icon-2.png);
-  background-size: 40px;
-  background-repeat: no-repeat;
-}
-
-.left_decorate {
-
-}
-/* decorate end */
 
 .og-box {
   overflow: hidden;
