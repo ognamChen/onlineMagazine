@@ -28,7 +28,12 @@ section {
   /* border-bottom: 1px solid rgba(170, 170, 170, 0.5);
   border-top: 1px solid rgba(170, 170, 170, 0.5); */
   margin-bottom: -1px;
-  padding: 15px 0;
+  /* padding: 15px 0; */
+}
+
+section#point {
+  padding: 0px;
+  /* border-bottom: 1px solid rgb(170, 170, 170); */
 }
 
 p {
@@ -58,6 +63,14 @@ h3 {
   color: #1b1e21 !important;
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  /* margin-right: auto; */
+  /* margin-left: auto;*/
+}
+
 @media (max-width: 767px) {
   h1 {
     font-size: 1.5rem;
@@ -69,12 +82,16 @@ h3 {
 /* basic end */
 
 /* header start */
+header {
+  border-bottom: 1px solid rgba(170, 170, 170, 1);
+}
+
 .header_img {
   display: inline-block;
 }
 
 .header_img img {
-  width: 300px;
+  width: 350px;
   padding: 20px;
 }
 
@@ -89,8 +106,10 @@ h3 {
 /* sideMenu start */
 .sideMenuBtn {
   display: inline-block;
-  /* position: absolute; */
-  float: right;
+  position: fixed;
+  /* float: right; */
+  top: 30px;
+  right: 30px;
   width: 60px;
   height: 60px;
   background: url(../clabo/assets/img/icon-menu.png);
@@ -98,6 +117,7 @@ h3 {
   background-repeat: no-repeat;
   cursor: pointer;
   margin: 20px;
+  z-index: 10;
   /* opacity: 0.8; */
   /* transition: 0.2s; */
 }
@@ -123,7 +143,7 @@ h3 {
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 15; /* Sit on top */
-  left: 0;
+  right: 0;
   top: 0;
   background-color: rgb(0, 0, 0); /* Black fallback color */
   background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
@@ -184,8 +204,8 @@ h3 {
   z-index: 0;
   width: 40px;
   height: 140px;
-  top: 200px;
-  right: 20px;
+  top: 45%;
+  right: 10px;
   background: url(../clabo/assets/img/icon-2.png);
   background-size: 40px;
   background-repeat: no-repeat;
@@ -198,7 +218,7 @@ h3 {
 /* point start */
 .point {
   /* background: #fff; */
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   border-bottom: 1px solid rgba(170, 170, 170, 1);
 }
 
@@ -220,9 +240,13 @@ h3 {
 }
 
 .point_description {
-  /* display: inline-block; */
-  /* height: 300px; */
   font-size: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  /* height: 100%; */
+  background: linear-gradient(rgba(170, 170, 170, 0), rgba(170, 170, 170, 1));
 }
 
 .point_description::before {
@@ -239,11 +263,13 @@ h3 {
 }
 
 .point_title {
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 10px;
+  font-size: 50px;
+  letter-spacing: 0px;
+  font-weight: bolder;
+  /* line-height: 20px; */
+  padding: 10px 30px;
+  /* color: #fff; */
+  /* font-style: italic; */
 }
 
 .claboItem .point_title {
@@ -255,8 +281,9 @@ h3 {
 }
 
 .point_title span {
-  color: rgba(0, 0, 255, 1);
-  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bolder;
+  font-size: 24px;
 }
 
 .claboItem .point_title span {
@@ -264,16 +291,17 @@ h3 {
 }
 
 .point_excerpt {
-  color: rgba(170, 170, 170, 1);
+  /* color: rgba(255, 255, 255, 1); */
   font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 24px;
-  padding: 10px;
+  letter-spacing: 1px;
+  /* line-height: 24px; */
+  padding: 10px 30px;
 }
 
 .point_img {
   overflow: hidden;
-  margin: 10px;
+  margin: 10px 0px;
+  position: relative;
 }
 /* point end */
 
@@ -284,7 +312,7 @@ h3 {
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 24px;
-  margin: 10px;
+  margin: 10px 0px 0px 0px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -327,7 +355,7 @@ h3 {
   padding-bottom: 20px;
 }
 
-.feature {
+.feature:last-child {
   /* background: #fff; */
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(170, 170, 170, 1);
@@ -347,7 +375,7 @@ h3 {
 
 .feature_img {
   overflow: hidden;
-  margin: 10px;
+  margin: 10px 0px;
 }
 
 .feature_description {
@@ -401,7 +429,7 @@ h3 {
 
 .posts_img {
   overflow: hidden;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .posts_description {
@@ -440,6 +468,39 @@ h3 {
   letter-spacing: 3px;
   line-height: 24px;
   padding: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .posts_img {
+    max-height: 180px;
+  }
+  .claboList .posts_img {
+    max-height: 120px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .posts_img {
+    max-height: 162px;
+  }
+  .claboList .posts_img {
+    max-height: 120px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .posts_img {
+    max-height: 116px;
+  }
+  .claboList .posts_img {
+    max-height: 140px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767) {
+  .claboList .posts_img {
+    max-height: 115px;
+  }
 }
 /* posts end */
 
@@ -611,12 +672,13 @@ img.aligncenter {
 
 /* clabo_plus_content start */
 .clabo_plus_content {
-  background: #fff;
+  background: rgba(75, 145, 135, 1);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .claboItem {
-  border-top: 80px solid transparent; 
+  /* border-top: 80px solid transparent; */
 }
 
 .claboItem.hide {

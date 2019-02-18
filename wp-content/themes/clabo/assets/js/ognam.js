@@ -14,7 +14,7 @@ $(document).ready(function() {
   $(".feature_mh").matchHeight(matchHeightOption);
   $(".point_mh").matchHeight(matchHeightOption);
   $(".posts_mh").matchHeight(matchHeightOption);
-  $(".posts_img").matchHeight(matchHeightOption);
+  // $(".posts_img").matchHeight(matchHeightOption);
   // match Height end
 
   // owl carousel start
@@ -30,10 +30,10 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      600: {
+      576: {
         items: 3
       },
-      1000: {
+      992: {
         items: 5
       }
     }
@@ -96,7 +96,7 @@ function showPost(id) {
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  $("#myNav").css("width", "100%");
+  $("#myNav").css("width", "50%");
   // document.getElementById("myNav").style.width = "100%";
 }
 
