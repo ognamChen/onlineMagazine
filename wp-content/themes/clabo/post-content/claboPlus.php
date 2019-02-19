@@ -21,7 +21,7 @@ $posts = get_posts($args);
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel" id="clabCarousel">
                     <?php
                     foreach ($posts as $post) {
                         $category = get_the_category($post->ID);
@@ -41,15 +41,14 @@ $posts = get_posts($args);
                         $category_url = get_category_link($category_id);
                         ?>
                         <!-- PHP repeat start  -->
-                        <!-- <a href="javascript:void();" onclick="javascript:showPost(<?php echo $post->ID; ?>);"> -->
-                        <a href="#<?php echo $post->ID; ?>" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
+                        <a class="item" href="#<?php echo $post->ID; ?>" onclick="javascript:showPost(<?php echo $post->ID; ?>);">
                             <div class="claboList posts posts_mh">                                
                                 <div class="posts_img">
                                     <img class="img-fluid" src="<?php echo $image ?>" alt="" srcset="">
                                 </div>
                                 <div class="posts_description">
                                     <div class="posts_title">
-                                        <span>〔<?php echo $category_name ?>〕</span>
+                                        <span><?php echo $category_name ?> | </span>
                                         <?php echo $post->post_title ?>
                                     </div>
                                 </div>
@@ -83,7 +82,7 @@ $posts = get_posts($args);
                                 <div class="point_description point_mh">
                                     <a href="<?php echo $permalink ?>">
                                         <div class="point_title">
-                                            <span>〔<?php echo $category_name ?>〕</span>
+                                            <span><?php echo $category_name ?> | </span>
                                             <?php echo $post->post_title ?>
                                         </div>
                                         <div class="point_excerpt">

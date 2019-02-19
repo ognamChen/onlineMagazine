@@ -40,7 +40,7 @@ $posts = get_posts($args);
                             </div>
                             <div class="posts_description">
                                 <div class="posts_title">
-                                    <span>〔<?php echo $category_name ?>〕</span>
+                                    <span><?php echo $category_name ?> | </span>
                                     <?php echo $post->post_title ?>
                                 </div>
                                 <div class="posts_excerpt">

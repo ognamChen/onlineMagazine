@@ -20,6 +20,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <!-- Overlay content -->
     <div class="overlay-content">
+    <div class="overlay-search"><?php echo get_search_form(); ?></div>
     <?php
         $menu_locations = get_nav_menu_locations();
         $menu_items = wp_get_nav_menu_items($menu_locations['indexNav']);

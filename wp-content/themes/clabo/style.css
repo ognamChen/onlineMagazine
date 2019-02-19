@@ -84,6 +84,10 @@ h3 {
 /* header start */
 header {
   border-bottom: 1px solid rgba(170, 170, 170, 1);
+  /* background: rgba(245, 245, 245, 1);
+  position: fixed;
+  width: 100vw;
+  z-index: 999; */
 }
 
 .header_img {
@@ -108,18 +112,23 @@ header {
   display: inline-block;
   position: fixed;
   /* float: right; */
-  top: 30px;
+  top: 80px;
   right: 30px;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   background: url(../clabo/assets/img/icon-menu.png);
-  background-size: 60px;
+  background-size: 45px;
   background-repeat: no-repeat;
   cursor: pointer;
   margin: 20px;
   z-index: 10;
   /* opacity: 0.8; */
-  /* transition: 0.2s; */
+  background-color: rgba(245,245,245,1);
+  transition: all 0.5s;
+}
+
+.sideMenuBtn.JQscroll {
+  top: 30px;
 }
 
 .sideMenuBtn:hover {
@@ -157,7 +166,7 @@ header {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  /* margin-top: 30px; */
 }
 
 /* The navigation links inside the overlay */
@@ -183,6 +192,12 @@ header {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.overlay-search {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -291,8 +306,9 @@ header {
 }
 
 .point_excerpt {
-  /* color: rgba(255, 255, 255, 1); */
+  color: rgba(255, 255, 255, 1);
   font-size: 14px;
+  font-weight: bolder;
   letter-spacing: 1px;
   /* line-height: 24px; */
   padding: 10px 30px;
@@ -323,11 +339,11 @@ header {
 
 .feature_category_title {
   font-size: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: 40px;
   padding: 15px 0;
-  color: rgba(0, 0, 255, 1);
-  font-weight: 400;
+  color: rgba(170, 170, 170, 1);
+  font-weight: bolder;
 }
 
 .feature_category img {
@@ -344,11 +360,11 @@ header {
 
 .feature_category_content {
   font-size: 16px;
-  line-height: 28px;
+  /* line-height: 28px; */
 }
 
 .feature_category_content p {
-  color: rgba(150, 150, 150, 1);
+  /* color: rgba(150, 150, 150, 1); */
 }
 
 .feature_category_content img {
@@ -383,23 +399,23 @@ header {
 }
 
 .feature_title {
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 30px;
   padding: 10px;
 }
 
 .feature_title span {
-  color: rgba(0, 0, 255, 1);
-  font-weight: 400;
+  color: rgba(170, 170, 170, 1);
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .feature_excerpt {
   color: rgba(170, 170, 170, 1);
-  font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 1px;
   padding: 10px;
 }
 /* feature end */
@@ -437,36 +453,38 @@ header {
 }
 
 .posts_title {
-  font-size: 17px;
+  font-size: 24px;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: bolder;
   line-height: 30px;
   padding: 10px;
 }
 
 .claboList .posts_title {
-  font-size: 17px;
+  font-size: 14px;
   letter-spacing: 0px;
-  font-weight: 300;
-  line-height: 30px;
+  font-weight: bolder;
+  line-height: unset;
   padding: 10px;
 }
 
 .posts_title span {
   color: rgba(0, 0, 255, 1);
-  font-weight: 400;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .claboList .posts_title span {
   color: rgba(0, 0, 0, 1);
-  font-weight: 400;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 .posts_excerpt {
   color: rgba(170, 170, 170, 1);
   font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 24px;
+  letter-spacing: 1px;
+  /* line-height: 24px; */
   padding: 10px;
 }
 
@@ -475,7 +493,7 @@ header {
     max-height: 180px;
   }
   .claboList .posts_img {
-    max-height: 120px;
+    max-height: 145px;
   }
 }
 
@@ -497,7 +515,13 @@ header {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767) {
+@media (min-width: 576px) and (max-width: 767px) {
+  .claboList .posts_img {
+    max-height: 115px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
   .claboList .posts_img {
     max-height: 115px;
   }
@@ -684,7 +708,66 @@ img.aligncenter {
 .claboItem.hide {
   display: none;
 }
+
+.claboItem .point_description {
+  background: unset;
+  font-size: 0;
+  position: relative;
+  bottom: unset;
+  left: unset;
+  width: unset;
+  height: unset;
+}
 /* clabo_plus_content end */
+
+/* owl carousel start */
+.owl-carousel {
+  position: relative;
+}
+
+.owl-nav {
+  position: absolute;
+  bottom: 0px;
+}
+
+.owl-prev,
+.owl-next {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+.owl-prev:hover img,
+.owl-next:hover img {
+  filter: brightness(0);
+}
+/* owl carousel end */
+
+/* font-size RWD start */
+@media screen and (min-width: 1200px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .point_title {
+    font-size: 20px;
+  }
+  .feature_title {
+    font-size: 20px;
+  }
+
+  .posts_title {
+    font-size: 20px;
+  }
+}
+/* font-size RWD end */
 
 /* footer start */
 

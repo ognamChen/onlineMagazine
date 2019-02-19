@@ -33,7 +33,7 @@ $primary_category_content_img = $matches[0][0];
                     <div class="feature_category" onclick="javascript:location.href='<?php echo $category_url; ?>'">
                         <div class="feature_category_img JQ"></div>
                         <div class="feature_category_title">
-                            〔<?php echo $category_name; ?>〕
+                            <?php echo $category_name; ?> | 
                         </div>
                         <div class="feature_category_content">
                             <?php echo category_description( $category_id ); ?>
@@ -61,7 +61,7 @@ $primary_category_content_img = $matches[0][0];
                                     </div>
                                 <div class="feature_description">
                                     <div class="feature_title">
-                                        <span>〔<?php echo $category_name ?>〕</span>
+                                        <span><?php echo $category_name ?> | </span>
                                         <?php echo $post->post_title ?>
                                     </div>
                                     <div class="feature_excerpt">
