@@ -64,9 +64,9 @@ $primary_category_content_img = $matches[0][0];
                                         <span><?php echo $category_name ?> | </span>
                                         <?php echo $post->post_title ?>
                                     </div>
-                                    <div class="feature_excerpt">
+                                    <!-- <div class="feature_excerpt">
                                         <?php echo $excerpt; ?>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </a>
                         </div>

@@ -19,7 +19,8 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+            <!-- <h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1> -->
+                <h1 class="page-title"><?php echo "抱歉！什麼都找不到！" ?></h1>
                 <?php echo get_search_form(); ?>
 				<?php endif; ?>
             </div>
@@ -40,21 +41,6 @@ get_header(); ?>
     else :
         // get_template_part( 'template-parts/post/content', 'none' );
     endif; ?>
-    </div>
-    <div class="m-t-30"></div>
-    <div class="row">
-        <div class="offset-md-2 col-md-8 col-sm-12 m-t-30 text-center">
-            <?php wpbeginner_numeric_posts_nav(); ?>
-        </div>
-        <div class="col-md-4" style="height:380px;">
-            <?php get_template_part('post-content/culturalTag');?>
-        </div>
-        <div class="col-md-4" style="height:380px;">
-            <?php get_template_part('post-content/editorChoiceTag');?>
-        </div>
-        <div class="col-md-4" style="height:380px;">
-            <?php get_template_part('post-content/mostpopularPost2');?>
-        </div>
     </div>
 </div>
 <?php get_footer();

@@ -19,7 +19,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+                <h1 class="page-title"><?php echo "抱歉！什麼都找不到！" ?></h1>
                 <?php echo get_search_form(); ?>
 				<?php endif; ?>
             </div>

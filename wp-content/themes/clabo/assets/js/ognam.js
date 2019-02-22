@@ -66,6 +66,14 @@ $(document).ready(function() {
   $(".category_page_content a").remove();
   // category page separate img and content end
 
+  
+  $(".child_cat_item_content a")
+    .hide()
+    .clone()
+    .appendTo(".child_cat_item_img")
+    .show();
+  $(".child_cat_item_content a").remove();
+  
   // clabo-plus
   $(".claboItem")
     .first()
@@ -89,13 +97,22 @@ $(document).ready(function() {
     }
   }
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     var scrollVal = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var scrollPosition = $(window).height() + scrollVal;
     if (scrollVal > 50) {
-        $(".sideMenuBtn").addClass("JQscroll");
+      $(".sideMenuBtn").addClass("JQscroll");
     } else {
-        $(".sideMenuBtn").removeClass("JQscroll");
+      $(".sideMenuBtn").removeClass("JQscroll");
     }
+    $(".right_decorate").css({"opacity": 1 - scrollPosition/scrollHeight });
+    // console.log(scrollPosition/scrollHeight);
+  });
+
+  $(window).on("scroll", function() {
+    
+
   });
 });
 
