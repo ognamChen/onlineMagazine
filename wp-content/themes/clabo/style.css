@@ -378,9 +378,12 @@ header {
   display: none;
 }
 
-.feature:last-child {
-  /* background: #fff; */
+/* .feature:last-child {
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(170, 170, 170, 1);
+} */
+
+.feature_wrap {
   border-bottom: 1px solid rgba(170, 170, 170, 1);
 }
 

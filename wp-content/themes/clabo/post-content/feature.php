@@ -42,7 +42,7 @@ $primary_category_content_img = $matches[0][0];
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="feature_mh">
+                <div class="feature_mh feature_wrap">
                     <?php
                     foreach ($posts as $post) {
                         $image = get_the_post_thumbnail_url($post);
