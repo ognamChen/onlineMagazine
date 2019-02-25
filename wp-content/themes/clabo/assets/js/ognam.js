@@ -107,13 +107,10 @@ $(document).ready(function() {
       $(".sideMenuBtn").removeClass("JQscroll");
     }
     $(".right_decorate").css({"opacity": 1 - scrollPosition/scrollHeight });
+    // $(".right_decorate").css({"top": (scrollPosition/scrollHeight) * 90 + "%" });
     // console.log(scrollPosition/scrollHeight);
   });
 
-  $(window).on("scroll", function() {
-    
-
-  });
 });
 
 // tabs start

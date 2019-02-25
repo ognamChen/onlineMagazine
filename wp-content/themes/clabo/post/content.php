@@ -12,7 +12,6 @@
                         <!-- <p><?php echo get_the_post_thumbnail_caption() ?></p> -->
                     </div>
                     <div class="post_content_head">
-                        <div class="post_content_title"><?php the_title();?></div>
                         <div class="post_content_info">
                             <?php the_category(' ');?>
                                 <!-- <?php if (has_tag()) { ?>
@@ -20,6 +19,12 @@
                                 <?php } ?> -->
                                 <!-- <p>發佈時間：<span style="color:#1b1e21"><?php the_time('Y/m/j a g:i');?></span></p> -->
                         </div>
+                        <div class="post_content_title"><?php the_title();?></div>
+                        <div class="post_content_info">
+                            <!-- <?php get_post_meta($post_id, $key, $single) ?> -->
+                            <?php the_meta(); ?>
+                        </div>
+                        
                         <!-- <div class="post_content_excerpt">
                             <?php the_excerpt();?>
                         </div> -->
