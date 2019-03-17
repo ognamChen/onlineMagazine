@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="child_cat_item_title">
-                            <?php echo $category_name; ?>
+                            <?php echo $category_name; ?> |
                         </div>
                         <div class="child_cat_item_content">
                             <?php echo $category_description; ?>

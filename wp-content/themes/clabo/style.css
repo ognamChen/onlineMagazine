@@ -613,6 +613,7 @@ header {
   font-weight: bolder;
   color: rgb(170, 170, 170);
   padding: 10px;
+  display: inline-block;
 }
 
 .child_cat_item_content {

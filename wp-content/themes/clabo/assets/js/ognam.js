@@ -58,11 +58,18 @@ $(document).ready(function() {
   // feature category seprate img and content end
 
   // feature_subtitle
-  $("._clabo")
+  $(".feature_category_content ._clabo")
   .hide()
   .clone()
   .insertAfter(".feature_category_title")
   .show();
+
+  $(".child_cat_item_content ._clabo")
+  .hide()
+  .clone()
+  .insertAfter(".child_cat_item_title")
+  .show();
+  
 
   // category page separate img and content start
   $(".category_page_content a")
