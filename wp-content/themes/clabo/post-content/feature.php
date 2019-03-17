@@ -29,10 +29,10 @@ $primary_category_content_img = $matches[0][0];
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <div class="feature_mh" style="border-bottom: 1px solid rgba(170, 170, 170, 1);">
+                <div class="feature_mh">
                     <div class="feature_category" onclick="javascript:location.href='<?php echo $category_url; ?>'">
                         <div class="feature_category_img JQ"></div>
-                        <div class="feature_category_title">
+                        <div class="feature_category_title home">
                             <?php echo $category_name; ?> | 
                         </div>
                         <div class="feature_category_content">
@@ -75,5 +75,6 @@ $primary_category_content_img = $matches[0][0];
                 </div>
             </div>
         </div>
+        <hr class="feature_hr">
     </div>
 </section>

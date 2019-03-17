@@ -65,6 +65,7 @@ function register_theme_menus()
     register_nav_menus(array(
         'indexNav' => __('nav'),
         'footerNav' => __('footer'),
+        'footerAbout' => __('footer2')
     ));
 }
 

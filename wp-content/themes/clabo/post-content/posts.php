@@ -11,7 +11,7 @@ $clabo_not_in_id = get_category_by_slug($clabo)->term_id;
 
 // get post args
 $args = array(
-    // 'numberposts' => -1,
+    'numberposts' => 5,
     'category__not_in' => array($point_not_in_id, $feature_not_in_id, $clabo_not_in_id),
     'orderby' => 'date',
 );

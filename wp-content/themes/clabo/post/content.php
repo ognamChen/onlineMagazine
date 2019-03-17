@@ -9,20 +9,17 @@
                 <div class="post_content">
                     <div class="post_content_img">
                         <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
-                        <!-- <p><?php echo get_the_post_thumbnail_caption() ?></p> -->
+                        <p><?php echo get_the_post_thumbnail_caption() ?></p>
                     </div>
                     <div class="post_content_head">
                         <div class="post_content_info">
                             <?php the_category(' ');?>
-                                <!-- <?php if (has_tag()) { ?>
-                                    <p><?php the_tags(null, ', ', null);?></p>
-                                <?php } ?> -->
-                                <!-- <p>發佈時間：<span style="color:#1b1e21"><?php the_time('Y/m/j a g:i');?></span></p> -->
                         </div>
                         <div class="post_content_title"><?php the_title();?></div>
                         <div class="post_content_info">
                             <!-- <?php get_post_meta($post_id, $key, $single) ?> -->
-                            <?php the_meta(); ?>
+                            <?php the_meta('|'); ?>
+                            <p style="color:rgb(170, 170, 170);">上稿日期: <span style="color:rgb(0,0,0);"><?php the_time('Y/m/d');?></span></p>
                         </div>
                         
                         <!-- <div class="post_content_excerpt">
@@ -31,6 +28,20 @@
                     </div>
                     <div class="post_content_main">
                         <p><?php the_content();?></p>
+                    </div>
+                    <style>
+                      .post_content_head p {
+                          color:rgb(170, 170, 170);
+                      }
+
+                      .post_content_head p a {
+                          color: rgb(0,0,0);
+                      }
+                    </style>
+                    <div class="post_content_head">
+                    <?php if (has_tag()) { ?>
+                        <p><?php the_tags(null, ' | ', null);?></p>
+                    <?php } ?>
                     </div>
                 </div>
             </div>

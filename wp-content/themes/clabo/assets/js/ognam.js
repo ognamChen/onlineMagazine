@@ -32,7 +32,7 @@ $(document).ready(function() {
     ],
     responsive: {
       0: {
-        items: 3,
+        items: 2,
         nav: true
       },
       576: {
@@ -40,7 +40,7 @@ $(document).ready(function() {
         nav: true
       },
       992: {
-        items: 5,
+        items: 4,
         nav: true
       }
     }
@@ -56,6 +56,13 @@ $(document).ready(function() {
   $(".feature_category_content a").remove();
 
   // feature category seprate img and content end
+
+  // feature_subtitle
+  $("._clabo")
+  .hide()
+  .clone()
+  .insertAfter(".feature_category_title")
+  .show();
 
   // category page separate img and content start
   $(".category_page_content a")

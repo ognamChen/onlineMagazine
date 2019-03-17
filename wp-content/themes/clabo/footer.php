@@ -2,8 +2,24 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
+            <div class="col-3 footer_logoText" style="border-right:1px solid black;">
+                <div class="footer_img">
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri() . "/assets/img/logo-6.png"; ?>" alt="">
+                </div>
+                <div class="footer_about">
+                <?php
+                    $menu_locations = get_nav_menu_locations();
+                    $menu_items = wp_get_nav_menu_items($menu_locations['footerAbout']);
+                    // var_dump($menu_items);
+                    foreach ($menu_items as $menu_item) {
+                        $permalink = $menu_item->url;
+                        $title = $menu_item->title;
+                    ?>
+                    <a href="<?php echo $permalink ?>"><?php echo $title ?></a>
+                    <?php } ?>
+                </div>
+            </div>
+            <div class="col-7">
                 <div class="row">
                     <div class="col-md-6 footer_left">
                         <a href="https://clab.org.tw/" target="_blank">
@@ -45,11 +61,11 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="clearfis"></div>
+                        <div class="clearfix"></div>
                         <div class="footer_copyright">
                             &copy; <?php echo "2012-"; echo date("Y"); echo " "; echo "財團法人臺灣生活美學基金會. All Rights Reserved."; ?>
                         </div>
-                        <div class="clearfis"></div>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@
 ?>
 <?php get_header();?>
 <?php get_template_part('nav');?>
-
+<div class="right_decorate"></div>
 <?php if (is_category("feature")): ?>
 <?php 
     $this_category = get_category($cat);
@@ -21,6 +21,11 @@
 <main>
     <div class="container">
         <div class="child_cat_list">
+            <div class="col-md-12">
+                <div class="category_page_title">
+                    <?php single_tag_title();?> |
+                </div>
+            </div>
         <?php foreach ($child_ids as $child_id) {
             $category_url = get_category_link($child_id);
             $category_name = get_cat_name($child_id);
@@ -28,7 +33,7 @@
             ?>
             <div class="child_cat_item" onclick="javascript:location.href='<?php echo $category_url; ?>'">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-6">
                         <div class="child_cat_item_title">
                             <?php echo $category_name; ?>
                         </div>
@@ -36,7 +41,7 @@
                             <?php echo $category_description; ?>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="child_cat_item_img JQ"></div>
                     </div>
                 </div>    

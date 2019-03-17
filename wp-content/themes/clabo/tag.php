@@ -18,7 +18,7 @@
             <div class="row" style="">
                 <div class="col-md-12">
                     <div class="category_page_title">
-                        〔<?php single_tag_title();?>〕
+                        <?php single_tag_title();?> |
                     </div>
                 </div>
             </div>
