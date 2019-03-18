@@ -119,10 +119,10 @@ header {
   float: right;
   /* top: 0px; */
   /* right: 30px; */
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
   background: url(../clabo/assets/img/icon-menu.png);
-  background-size: 45px;
+  background-size: 60px;
   background-repeat: no-repeat;
   cursor: pointer;
   margin: 20px;
@@ -136,8 +136,8 @@ header {
   position: fixed;
   top: 15px;
   right: 0px;
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
 }
 
 .sideMenuBtn:hover {
