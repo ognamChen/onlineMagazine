@@ -388,6 +388,10 @@ header {
   font-size: 18px;
 }
 
+.category_page_content ._clabo {
+  padding: none;
+}
+
 .feature_category img {
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
