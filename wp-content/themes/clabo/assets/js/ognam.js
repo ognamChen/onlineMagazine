@@ -87,7 +87,8 @@ $(document).ready(function() {
     .appendTo(".child_cat_item_img")
     .show();
   $(".child_cat_item_content a").remove();
-  
+  $(".child_cat_item_img.JQ a").attr("href", "javascript:void(0);");
+
   // clabo-plus
   $(".claboItem")
     .first()
