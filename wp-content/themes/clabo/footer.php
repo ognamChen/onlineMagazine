@@ -19,7 +19,7 @@
                     <?php } ?>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-9">
                 <div class="row">
                     <div class="col-md-6 footer_left">
                         <a href="https://clab.org.tw/" target="_blank">

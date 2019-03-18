@@ -54,6 +54,9 @@ $(document).ready(function() {
     .appendTo(".feature_category_img")
     .show();
   $(".feature_category_content a").remove();
+  $(".feature_category_content ._clabo_1").show().append(" ...更多");
+  $(".feature_category_content ._clabo_2").hide();
+  $(".feature_category_content ._clabo_3").hide();
 
   // feature category seprate img and content end
 
@@ -69,6 +72,9 @@ $(document).ready(function() {
   .clone()
   .insertAfter(".child_cat_item_title")
   .show();
+  $(".child_cat_item_content ._clabo_1").show().append(" ...更多");
+  $(".child_cat_item_content ._clabo_2").hide();
+  $(".child_cat_item_content ._clabo_3").hide();
   
 
   // category page separate img and content start
@@ -78,9 +84,12 @@ $(document).ready(function() {
     .appendTo(".category_page_img")
     .show();
   $(".category_page_content a").remove();
+  $(".category_page_content ._clabo_1").show();
+  $(".category_page_content ._clabo_2").show();
+  $(".category_page_content ._clabo_3").show();
+
   // category page separate img and content end
 
-  
   $(".child_cat_item_content a")
     .hide()
     .clone()

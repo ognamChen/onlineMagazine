@@ -9,7 +9,7 @@
                 <div class="post_content">
                     <div class="post_content_img">
                         <img src="<?php the_post_thumbnail_url()?>" class="img-fluid" alt="Responsive image">
-                        <p><?php echo get_the_post_thumbnail_caption() ?></p>
+                        <div><?php echo get_the_post_thumbnail_caption() ?></div>
                     </div>
                     <div class="post_content_head">
                         <div class="post_content_info">
