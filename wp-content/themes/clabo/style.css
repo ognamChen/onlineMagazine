@@ -391,7 +391,7 @@ header {
   letter-spacing: 1px;
   font-weight: bolder;
   line-height: 30px;
-  padding: 10px;
+  padding: 0 10px;
   color: black;
 }
 
@@ -622,7 +622,7 @@ header {
 .child_cat_item_title {
   font-size: 20px;
   font-weight: bolder;
-  color: rgb(170, 170, 170);
+  color: rgb(0, 0, 255);
   padding: 10px 0 10px 10px;
   display: inline-block;
 }

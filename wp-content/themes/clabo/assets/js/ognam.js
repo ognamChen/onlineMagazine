@@ -54,7 +54,7 @@ $(document).ready(function() {
     .appendTo(".feature_category_img")
     .show();
   $(".feature_category_content a").remove();
-  $(".feature_category_content ._clabo_1").show().append(" ...更多");
+  $(".feature_category_content ._clabo_1").show().append(" ......more");
   $(".feature_category_content ._clabo_2").hide();
   $(".feature_category_content ._clabo_3").hide();
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
   .clone()
   .insertAfter(".child_cat_item_title")
   .show();
-  $(".child_cat_item_content ._clabo_1").show().append(" ...更多");
+  $(".child_cat_item_content ._clabo_1").show().append(" ......more");
   $(".child_cat_item_content ._clabo_2").hide();
   $(".child_cat_item_content ._clabo_3").hide();
   

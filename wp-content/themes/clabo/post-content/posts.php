@@ -13,7 +13,7 @@ $clabo_not_in_id = get_category_by_slug($clabo)->term_id;
 $args = array(
     'numberposts' => 5,
     'category__not_in' => array($point_not_in_id, $feature_not_in_id, $clabo_not_in_id),
-    'orderby' => 'date',
+    // 'orderby' => 'date',
 );
 $posts = get_posts($args);
 ?>
@@ -52,6 +52,11 @@ $posts = get_posts($args);
                 </div>
             <?php }?>
             <!-- PHP repeat end  -->
+            <div class="col-md-4">
+                <div class="" style="padding:20px; border:1px solid rgb(170,170,170); margin-top:10px;">
+                    <?php show_tag_cloud(array( format=>"flat", number=>"-1", color=>"#1b1e21" ));?>
+                </div>
+            </div>
         </div>
     </div>
 </section>
