@@ -2,7 +2,8 @@
 $id = get_the_ID(); 
 $postContent = get_the_content();
 $postwithbreaks = wpautop($postContent, true);
-$excerpt = wp_trim_words( get_the_content(), 120, '...');
+// $excerpt = wp_trim_words( get_the_content(), 120, '...');
+$excerpt = get_the_excerpt($id);
 ?>
 <div class="col-md-4">
     <div class="posts posts_mh">

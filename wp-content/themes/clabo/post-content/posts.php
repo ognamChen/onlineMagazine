@@ -53,8 +53,11 @@ $posts = get_posts($args);
             <?php }?>
             <!-- PHP repeat end  -->
             <div class="col-md-4">
-                <div class="" style="padding:20px; border:1px solid rgb(170,170,170); margin-top:10px;">
-                    <?php show_tag_cloud(array( format=>"flat", number=>"-1", color=>"#1b1e21" ));?>
+                <div class="tag_cloud_title">
+                    熱門關鍵字
+                </div>
+                <div class="tag_cloud_content" style="">
+                    <?php show_tag_cloud(array( format=>"flat", number=>"30", smallest=>"120", largest=>"200",  color=>"#1b1e21" ));?>
                 </div>
             </div>
         </div>
