@@ -78,7 +78,7 @@ $(document).ready(function() {
   
 
   // category page separate img and content start
-  $(".category_page_content a")
+  $(".category_page_content img")
     .hide()
     .clone()
     .appendTo(".category_page_img")
@@ -90,12 +90,17 @@ $(document).ready(function() {
 
   // category page separate img and content end
 
-  $(".child_cat_item_content a")
-    .hide()
-    .clone()
-    .appendTo(".child_cat_item_img")
-    .show();
-  $(".child_cat_item_content a").remove();
+  // var content_img = $(".child_cat_item_content img");
+  var cloned_img = $(".child_cat_item_content img").hide().clone();
+  var append_img = $(".child_cat_item_content img").parents(".child_cat_item").find(".child_cat_item_img");
+  $(cloned_img).each(function(i) {
+    $(append_img).each(function(i2) {
+      if (i == i2) {
+        $(cloned_img[i]).appendTo(append_img[i2]).show();
+      }
+    })
+  })
+  // $(".child_cat_item_content a").remove();
   $(".child_cat_item_img.JQ a").attr("href", "javascript:void(0);");
 
   // clabo-plus

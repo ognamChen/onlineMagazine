@@ -84,6 +84,15 @@ h3 {
   /* margin-right: auto; */
   /* margin-left: auto;*/
 }
+
+blockquote {
+  display: block;
+  /* margin: unset !important; */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
 /* basic end */
 
 /* header start */
@@ -811,8 +820,9 @@ header {
   font-weight: 300;
 }
 
-.post_content_main p strong {
+.post_content_main p strong, b {
   /* font-size: 20px; */
+  font-weight: 600;
 }
 
 .post_content_main img {
@@ -860,13 +870,26 @@ ul.post-meta li {
   margin-right: auto;
 }
 
-img.aligncenter {
+.aligncenter {
   margin: 0 auto;
+  text-align: center;
 }
 
-.wp-caption.alignleft {
+.aligncenter p {
+  text-align: left;
+}
+
+.wp-block-gallery {
+  list-style: none;
+}
+
+.wp-block-gallery li {
   display: inline-block;
 }
+
+/* .wp-caption.alignleft {
+  display: inline-block;
+} */
 /* wordpress end */
 
 /* jetpack end */
