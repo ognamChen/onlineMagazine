@@ -67,11 +67,23 @@ $(document).ready(function() {
   .insertAfter(".feature_category_title")
   .show();
 
-  $(".child_cat_item_content ._clabo")
-  .hide()
-  .clone()
-  .insertAfter(".child_cat_item_title")
-  .show();
+  // $(".child_cat_item_content ._clabo")
+  // .hide()
+  // .clone()
+  // .insertAfter(".child_cat_item_title")
+  // .show();
+
+  var cloned_subtitle = $(".child_cat_item_content ._clabo").hide().clone();
+  var append_subtitle = $(".child_cat_item_content ._clabo").parents(".child_cat_item").find(".child_cat_item_title");
+  $(cloned_subtitle).each(function(i) {
+    $(append_subtitle).each(function(i2) {
+      if (i == i2) {
+        $(cloned_subtitle[i]).insertAfter(append_subtitle[i2]).show();
+      }
+    })
+  })
+
+
   $(".child_cat_item_content ._clabo_1").show().append(" ......more");
   $(".child_cat_item_content ._clabo_2").hide();
   $(".child_cat_item_content ._clabo_3").hide();
