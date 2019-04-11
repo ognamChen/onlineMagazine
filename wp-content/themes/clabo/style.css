@@ -32,6 +32,7 @@ html {
 }
 
 body {
+  font-size: 18px;
   font-family: Noto Sans TC, sans-serif;
   background-color: rgba(245, 245, 245, 1);
   word-break: break-word;
@@ -816,7 +817,7 @@ header {
 
 .post_content_main p {
   line-height: 30px;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 300;
 }
 

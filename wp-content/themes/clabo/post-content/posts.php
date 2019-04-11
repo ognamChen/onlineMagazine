@@ -57,7 +57,7 @@ $posts = get_posts($args);
                     熱門關鍵字
                 </div>
                 <div class="tag_cloud_content" style="">
-                    <?php show_tag_cloud(array( format=>"flat", number=>"30", smallest=>"120", largest=>"200",  color=>"#1b1e21" ));?>
+                    <?php show_tag_cloud(array( format=>"flat", number=>"28", smallest=>"100", largest=>"200",  color=>"#1b1e21" ));?>
                 </div>
             </div>
         </div>
