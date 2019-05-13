@@ -49,7 +49,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCYmx4THY_3SYro_bJmrAA0g/featured?disable_polymer=1" target="_blank">
+                                <a href="https://www.youtube.com/channel/UCLjxcL20jZI8MCnZzzVIBoQ/featured" target="_blank">
                                     <i class="fab fa-youtube"></i>
                                     <span class="text-hide">youtube</span>
                                 </a>
