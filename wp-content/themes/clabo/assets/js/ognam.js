@@ -168,7 +168,13 @@ function showPost(id) {
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  $("#myNav").css("width", "50%");
+  var width = $(window).width();
+    if (width <= 767) {
+      $("#myNav").css("width", "100%");
+    } else {
+      $("#myNav").css("width", "50%");
+    }
+  
   // document.getElementById("myNav").style.width = "100%";
 }
 

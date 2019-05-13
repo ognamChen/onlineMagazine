@@ -9,14 +9,14 @@ $args = array(
 );
 // $category_id = get_category_by_slug($category_slug)->term_id;
 // $category_url = get_category_link($category_id);
-// $category_name = get_category_by_slug($category_slug)->name;
 $posts = get_posts($args);
 // get primary category
 $post_categories = get_post_primary_category($posts[0]->ID, 'category');
 $primary_category = $post_categories['primary_category'];
 $primary_category_content = $primary_category->description;
 $category_id = ($primary_category)->term_id;
-$category_name = $primary_category->name;
+$category_name = get_category_by_slug($category_slug)->name;
+// $category_name = $primary_category->name;
 $category_url = get_category_link($category_id);
 foreach ($posts as $post) {
     $image = get_the_post_thumbnail_url($post);

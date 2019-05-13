@@ -22,7 +22,7 @@ $posts = get_posts($args);
             <?php
             foreach ($posts as $post) {
                 $category = get_the_category($post->ID);
-                $category_name = $category[0]->name;
+                // $category_name = $category[0]->name;
                 $image = get_the_post_thumbnail_url($post);
                 $permalink = get_permalink($post);
                 $time = get_post_time('Y-m-d', true, $post, false);
@@ -30,6 +30,13 @@ $posts = get_posts($args);
                 $postMeta = get_post_meta($post->ID, 'description', true);
                 // $excerpt = wp_trim_words(get_the_excerpt($post), 40, '...');
                 $excerpt = get_the_excerpt($post);
+                // category
+                $post_categories = get_post_primary_category($post->ID, 'category');
+                $primary_category = $post_categories['primary_category'];
+                $primary_category_content = $primary_category->description;
+                $category_id = ($primary_category)->term_id;
+                $category_name = $primary_category->name;
+                $category_url = get_category_link($category_id);
                 ?>
                 <!-- PHP repeat start  -->
                 <div class="col-md-4">

@@ -161,6 +161,11 @@ header {
     height: 40px;
     background-size: 40px;
   }
+
+  .sideMenuBtn.JQscroll {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* sideMenu end */
@@ -338,12 +343,16 @@ header {
 }
 
 .point_excerpt {
-  /* color: rgba(255, 255, 255, 1); */
+  color: rgba(255, 255, 255, 1);
   font-size: 15px;
   font-weight: bolder;
   letter-spacing: 1px;
   /* line-height: 24px; */
   padding: 10px 30px;
+}
+
+.claboItem .point_excerpt {
+  color: inherit;
 }
 
 .point_img {
@@ -769,6 +778,7 @@ header {
 .post_content_info {
   padding: 10px 0;
   display: inline-block;
+  color: rgba(170, 170, 170, 1);
 }
 
 .post_content_info .post-meta {
@@ -945,13 +955,14 @@ ul.post-meta li {
 
 .owl-prev,
 .owl-next {
+  filter: brightness(0);
   display: inline-block;
   transition: all 0.5s;
 }
 
 .owl-prev:hover img,
 .owl-next:hover img {
-  filter: brightness(0);
+  filter: brightness(1);
 }
 /* owl carousel end */
 
@@ -1071,6 +1082,7 @@ footer {
 
 .footer_img {
   margin-top: -10px;
+  text-align: center;
 }
 
 .footer_logoText {
@@ -1131,6 +1143,12 @@ ul.footer_menu i {
   ul.footer_menu {
     padding: 30px 0;
     float: unset;
+  }
+
+  .footer_about {
+    padding: 10px;
+    position: relative;
+    text-align: center;
   }
 }
 

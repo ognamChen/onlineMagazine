@@ -2,7 +2,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-3 footer_logoText" style="border-right:1px solid black;">
+            <div class="col-sm-3 footer_logoText" style="border-right:1px solid black;">
                 <div class="footer_img">
                     <img class="img-fluid" src="<?php echo get_template_directory_uri() . "/assets/img/logo-6.png"; ?>" alt="">
                 </div>
@@ -19,7 +19,7 @@
                     <?php } ?>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-sm-9">
                 <div class="row">
                     <div class="col-md-6 footer_left">
                         <a href="https://clab.org.tw/" target="_blank">

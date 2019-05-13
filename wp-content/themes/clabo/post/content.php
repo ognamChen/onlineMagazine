@@ -13,7 +13,29 @@
                     </div>
                     <div class="post_content_head">
                         <div class="post_content_info">
-                            <?php the_category(' ');?>
+                        <?php 
+                            $categories = get_the_category( get_the_ID() );
+                            if( $categories ){
+                                $output = "";
+
+                                //display all the top-level categories first
+                                foreach ($categories as $category) {
+                                    if( !$category->parent ){
+                                        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '" >' . $category->name.'</a> | ';
+                                    }
+                                }
+
+                                //now, display all the child categories
+                                foreach ($categories as $category) {
+                                    if( $category->parent ){
+                                        $output .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '" >' . $category->name.'</a>,';
+                                    }
+                                }
+
+                                echo trim( $output, "," );
+                            }
+                            ?>
+                            <!-- <?php the_category(' | ');?> -->
                         </div>
                         <div class="post_content_title"><?php the_title();?></div>
                         <div class="post_content_info">
