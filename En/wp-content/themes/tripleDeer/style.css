@@ -1,0 +1,293 @@
+/*
+Theme Name: ognam
+Theme URI: 
+Author: 
+Author URI: 
+Description: Twenty Seventeen brings your site to life with immersive featured images and subtle animations. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* body {
+  background-image: url(../tripleDeer/assets/img/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -200px;
+} */
+
+.icon_nav {
+  margin-top:50px;
+}
+
+.icon_nav a {
+  color: #616161;
+}
+
+.icon_nav a:hover {
+  color: #de270f;
+}
+
+.clearfix {
+  clear: both !important;
+}
+
+body {
+  font-size: 12px !important;
+  color: #616161 !important;
+}
+
+footer {
+  margin: 20px 0 !important;
+}
+
+footer a {
+  color: #bdbdbd;
+}
+
+footer a:hover {
+  color: #de270f;
+}
+
+.header_image img {
+  margin: 0 auto;
+  width: 300px;
+  filter: brightness(80%);
+  float: right;
+}
+
+.card_folder {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.folder_title {
+  height: 40px;
+  width: 300px;
+  border: 1px solid #eeeeee;
+}
+
+.folder_title p {
+  padding: 10px;
+  text-align: right;
+}
+
+.folder_box {
+  margin-top: -1px;
+  width: 300px;
+  border: 1px solid #eeeeee;
+}
+
+.folder_box p {
+  padding: 0px 10px;
+}
+
+.folder_box div a {
+  cursor: pointer;
+  color: #888 !important;
+  text-decoration: none;
+}
+
+.folder_box div a:hover {
+  cursor: pointer;
+  color: #616161 !important;
+  text-decoration: none;
+}
+
+.folder_box .icon img {
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.folder_box .time {
+  padding: 10px 0px;
+  text-align: right;
+}
+
+.folder_box .title {
+  text-align: right;
+}
+
+.folder_box .image {
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.folder_box .image:hover {
+  opacity: 1;
+}
+
+.card_post {
+  margin: 10px auto;
+  border: 1px solid #eeeeee;
+}
+
+.card_post img {
+  padding: 10px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.card_post img:hover{
+  opacity: 1;
+}
+
+.card_post .title {
+  height: 40px;
+  font-size: 14px;
+}
+
+.card_post .content {
+  margin-top: -1px;
+}
+
+.card_post p {
+  padding: 10px;
+}
+
+.card_post a {
+  cursor: pointer;
+  color: #888 !important;
+  text-decoration: none;
+}
+
+.card_post a:hover {
+  cursor: pointer;
+  color: #616161 !important;
+  text-decoration: none;
+}
+
+#news {
+  margin-top: 60px !important;
+}
+
+.card_news {
+  margin: 10px auto;
+  border: 1px solid #eeeeee;
+  text-align: center;
+}
+
+.card_news .title {
+  height: 40px;
+  font-size: 14px;
+}
+
+.card_news .time {
+  padding: 20px;
+  margin-top: -60px;
+}
+
+.card_news a {
+  cursor: pointer;
+  color: #888 !important;
+  text-decoration: none;
+}
+
+.card_news a:hover {
+  color: #616161 !important;
+  text-decoration: none;
+}
+
+.card_news img {
+  padding: 20px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.card_news img:hover {
+  opacity: 1;
+}
+
+/* products */
+
+#products {
+  margin-top: 60px !important;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.card_product {
+  margin: 10px auto;
+}
+
+.card_product .title {
+  border: 1px solid #eeeeee;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.card_product .image img {
+  border: 1px solid #eeeeee;
+  object-fit: cover;
+  filter: brightness(80%);
+  width: 150px;
+  height: 150px;
+}
+
+.card_product .image_text {
+  position: absolute;
+  font-size: 14px;
+  color: #eeeeee;
+  width: 128px;
+  top: 22px;
+  left: 30px;
+}
+
+.card_product a {
+  cursor: pointer;
+  color: #888 !important;
+  text-decoration: none;
+}
+
+.card_product a:hover {
+  cursor: pointer;
+  color: #616161 !important;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.list-group-item {
+  opacity: 1;
+  border: none !important;
+}
+
+.video-player {
+  margin: 8px;
+  position: relative;
+  padding-bottom: 56.25%; /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-list-container {
+  margin: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+ul.video-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+ul.video-list ._video {
+  padding: 16px;
+  cursor: pointer;
+}
